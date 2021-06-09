@@ -1,0 +1,13 @@
+h1 {
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list-item {
+    font-size: 4.5rem;
+    margin-top: 5.5rem;
+}
