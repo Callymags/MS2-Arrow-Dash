@@ -1,3 +1,16 @@
+body {
+  background-image: url("images/landing-page.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+    color: white;
+}
+
 h1 {
     font-size: 5rem;
     margin-top: 5rem;
