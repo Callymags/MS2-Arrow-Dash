@@ -11,3 +11,12 @@ ul {
     font-size: 4.5rem;
     margin-top: 5.5rem;
 }
+/* --------------------------------FOOTER */
+
+footer {
+    height: 4rem;
+}
+.social-link {
+    font-size: 2rem;
+    padding-bottom: 4rem;
+}
