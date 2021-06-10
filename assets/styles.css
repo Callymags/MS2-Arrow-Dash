@@ -1,9 +1,6 @@
 body {
   background-color: black;
-}
-
-body {
-    color: white;
+  color: white;
 }
 
 h1 {
@@ -19,6 +16,16 @@ ul {
     font-size: 4.5rem;
     margin-top: 5.5rem;
 }
+
+.list-link {
+    text-decoration: none;
+    color: white;
+}
+/* --------------------------------GAME PAGE */
+.game-buttons {
+    font-size: 5rem;
+}
+
 /* --------------------------------FOOTER */
 
 footer {
