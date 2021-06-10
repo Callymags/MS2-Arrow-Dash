@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: white;
+  margin: 0;
 }
 
 h1 {
@@ -22,9 +23,15 @@ ul {
     color: white;
 }
 /* --------------------------------GAME PAGE */
-.game-buttons {
-    font-size: 5rem;
+
+#game-section {
+    min-height: 550px;
 }
+.game-buttons {
+    font-size: 4.5rem;
+    color: white;
+}
+
 
 /* --------------------------------FOOTER */
 
