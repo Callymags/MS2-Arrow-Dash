@@ -6,7 +6,11 @@ body {
 
 h1 {
     font-size: 5rem;
-    margin-top: 5rem;
+}
+
+/* --------------------------------LANDING PAGE */
+.game-navigation {
+    height: 90vh;
 }
 
 ul {
@@ -34,9 +38,11 @@ ul {
 
 
 /* --------------------------------FOOTER */
-
 footer {
-    height: 4rem;
+    padding-top: 1.5rem;
+    height: 10vh;
+    position: relative;
+    bottom: 0;
 }
 .social-link {
     font-size: 2rem;
