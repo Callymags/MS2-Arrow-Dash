@@ -47,4 +47,14 @@ left, right, and buzz.
 While the user is given directions about the next sequence, a random button will also be pressed when the audio plays 
 to try and confuse them. 
 
+## UX: 
+### Project Goals
+The primary goal of this project is to create a basic game that users can enjoy. I want players to clearly 
+understand how the game works but confuse the user’s thought pattern which will add to their enjoyment when playing the game. 
+
+The secondary goal of this project is to strengthen my knowledge of JavaScript and jQuery. I am hoping that I
+will encounter challenges during my development of the game that will allow me to understand the JavaScript language 
+and the jQuery library more clearly. 
+
+
 
