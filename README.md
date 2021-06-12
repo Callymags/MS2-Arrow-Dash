@@ -57,6 +57,12 @@ The secondary goal of this project is to strengthen my knowledge of JavaScript a
 will encounter challenges during my development of the game that will allow me to understand the JavaScript language 
 and the jQuery library more clearly. 
 
+## Technologies Used
+### Frameworks 
+* [Audio Converter:](https://online-audio-converter.com/) Used to change audio files recorded on my phone to pm3 format.
+* [AudioTrimmer:](https://audiotrimmer.com/) Used to shorten audio files I recorded from my phone.
+
+
 
 ## Challenges Encountered 
 * **Difficulty validating JavaScript functions through console**
