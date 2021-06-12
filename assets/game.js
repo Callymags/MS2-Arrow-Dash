@@ -7,6 +7,10 @@ function nextSequence(randomDirection) {
 
    $("#" + randomDirection).fadeOut(100).fadeIn(100);
 
+
+/*    Audio javascript contribution from stackoverflow. See ReadMe Contributions section 
+      for more information (https://stackoverflow.com/questions/9419263/how-to-play-audio) */
+
    var audio = new Audio("assets/sounds/" + randomDirection + ".mp3")
    audio.play();
 }
