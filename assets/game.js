@@ -6,6 +6,10 @@ function nextSequence(randomDirection) {
    gamePattern.push(randomDirection);
 
    $("#" + randomDirection).fadeOut(100).fadeIn(100);
+
+   var audio = new Audio("assets/sounds/" + randomDirection + ".mp3")
+   audio.play();
 }
+
 
 

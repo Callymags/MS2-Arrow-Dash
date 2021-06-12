@@ -24,6 +24,7 @@
   * [Site Performance](#site-performance)
   * [Code Validation](#code-validation)
 * [Bugs Encountered](#bugs-encountered)
+* [Challenges Encountered](#challenges-encountered)
 * [Deployment](#deployment)
   * [GitHub Pages](#github-pages)
   * [Forking the GitHub Repository](#forking-the-github-repository)
@@ -55,6 +56,17 @@ understand how the game works but confuse the user’s thought pattern which wil
 The secondary goal of this project is to strengthen my knowledge of JavaScript and jQuery. I am hoping that I
 will encounter challenges during my development of the game that will allow me to understand the JavaScript language 
 and the jQuery library more clearly. 
+
+
+## Challenges Encountered 
+* **Difficulty validating JavaScript functions through console**
+
+While writing the JavaScript code for my nextSequence function, I found it difficult to confirm if my code would work. 
+I could not find an easy way to confirm this code through the console. 
+
+Solution: I copied the JavaScript lines into the browser console and left out the nextSequence function title. 
+This allowed me to have a definition for a variable within my nextSequence function and confirm that the variable was 
+generating random directions.  
 
 
 
