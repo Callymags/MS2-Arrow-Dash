@@ -7,3 +7,5 @@ function nextSequence(randomDirection) {
 
    $("#" + randomDirection).fadeOut(100).fadeIn(100);
 }
+
+
