@@ -98,11 +98,27 @@ As a developer, I want to:
 1. Develop a deeper understanding of jQuery and JavaScript.
 2. Create a professional looking project that I will be proud to put in my portfolio.
 
+### Wireframes 
+I used Balsamiq wireframes to visualise how the game would be structured on different devices. 
+
+These wireframes were a useful reference when I began developing the basic structure for the home page and game page. 
+
+They also allowed me to foresee that there may be some problems with the game on smaller screen sizes due to the structure 
+I was looking to have on the game page.  
+
+
+* [Landing Page](wireframes/ms2-landing-page.jpg)
+* [Game Page](wireframes/ms2-game-page.jpg)
+* [Contact](wireframes/contact-us-modal.jpg)
+
+
 
 ## Technologies Used
 ### Frameworks 
-* [Audio Converter:](https://online-audio-converter.com/) Used to change audio files recorded on my phone to pm3 format.
+* [Audio Converter:](https://online-audio-converter.com/) Used to change audio files recorded on my phone to mp3 format.
 * [AudioTrimmer:](https://audiotrimmer.com/) Used to shorten audio files I recorded from my phone.
+* [Balsamiq:](https://balsamiq.com/) Used to draw up wireframes so that I could visualise the design of the game.
+* [PDF2JPG:](https://pdf2jpg.net/) Used to convert exported wireframe PDFs to JPG images that can be viewed in ReadMe. 
 
 
 
