@@ -109,7 +109,7 @@ I was looking to have on the game page.
 
 * [Landing Page](wireframes/ms2-landing-page.jpg)
 * [Game Page](wireframes/ms2-game-page.jpg)
-* [Contact](wireframes/contact-us-modal.jpg)
+* [Contact](wireframes/ms2-contact-us-modal.jpg)
 
 
 
