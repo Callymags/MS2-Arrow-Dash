@@ -132,14 +132,16 @@ Solution: I copied the JavaScript lines into the browser console and left out th
 This allowed me to have a definition for a variable within my nextSequence function and confirm that the variable was 
 generating random directions.  
 
-* **Difficulty starting game once user clicks screen**
+* **User clicking on buttons before staring game added inputs to userPattern array**
 
-I did not want my game to start straight away once the user clicked start on the landing page. I decided I would get the user to click the screen to start the game sequence once they are on the game page. 
+Before starting the game, I wanted users to be able to click the buttons and hear the noises that they make. However, 
+I did not want these inputs to be added to the userPattern array. This array needed to be blank when the game 
+starts. You can view an image of the problem [here.](assets/images/problems/user-pattern-before-game.jpg)
 
-However, when creating a click function to start the game, I could not specify that the sequence would only be called on the first click. This resulted with the game calling a direction every time I clicked the screen. 
+Solution: The easiest way to get around this was to clear my array when the start button was clicked. 
+This allowed the userPattern array to be blank when the game starts. You can view the 
+solution [here.](assets/images/solutions/game-new-array.jpg)
 
-
-Solution: I found a thread in Stack Overflow that helped me solve this problem. I have linked this thread in my contributions. 
 
 
 ## Contributions 
