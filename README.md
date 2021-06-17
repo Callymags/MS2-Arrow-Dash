@@ -24,7 +24,6 @@
   * [Site Performance](#site-performance)
   * [Code Validation](#code-validation)
 * [Bugs Encountered](#bugs-encountered)
-* [Challenges Encountered](#challenges-encountered)
 * [Deployment](#deployment)
   * [GitHub Pages](#github-pages)
   * [Forking the GitHub Repository](#forking-the-github-repository)
@@ -122,7 +121,7 @@ I was looking to have on the game page.
 
 
 
-## Challenges Encountered 
+## Bugs Encountered 
 * **Difficulty validating JavaScript functions through console**
 
 While writing the JavaScript code for my nextSequence function, I found it difficult to confirm if my code would work. 
@@ -141,6 +140,18 @@ starts. You can view an image of the problem [here.](assets/images/bugs/user-pat
 Solution: The easiest way to get around this was to clear my array when the start button was clicked. 
 This allowed the userPattern array to be blank when the game starts. You can view the 
 solution [here.](assets/images/solutions/game-new-array.jpg)
+
+* **Comparison between userPattern and gamePattern variables always wrong**
+
+To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same 
+as the game pattern. When comparing these arrays, the comparison kept coming back as false and the 
+nextSequence function would not be called as a result.
+
+However, it seemed that the console was logging the same results from both patterns. You can view an image 
+of the problem [here.](assets/images/bugs/compare-array-bug.jpg)  
+
+Solution:  
+
 
 
 
