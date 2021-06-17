@@ -132,12 +132,25 @@ Solution: I copied the JavaScript lines into the browser console and left out th
 This allowed me to have a definition for a variable within my nextSequence function and confirm that the variable was 
 generating random directions.  
 
+* **Difficulty starting game once user clicks screen**
+
+I did not want my game to start straight away once the user clicked start on the landing page. I decided I would get the user to click the screen to start the game sequence once they are on the game page. 
+
+However, when creating a click function to start the game, I could not specify that the sequence would only be called on the first click. This resulted with the game calling a direction every time I clicked the screen. 
+
+
+Solution: I found a thread in Stack Overflow that helped me solve this problem. I have linked this thread in my contributions. 
+
+
 ## Contributions 
 ### Code 
-* **Stack Overflow**
+1. **Stack Overflow**
 
-The following thread was used to help play audio once a random direction was generated. [View here.]( https://stackoverflow.com/questions/9419263/how-to-play-audio)
+* The following thread was used to help play audio once a random direction 
+was generated. [View here.]( https://stackoverflow.com/questions/9419263/how-to-play-audio)
 
+* The following thread helped me start the game sequence once the user clicked on the screen 
+for the first time. [View here.]( https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery) 
 
 
 
