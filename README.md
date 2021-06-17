@@ -147,8 +147,9 @@ To produce the next sequence, the game needs to first check that the pattern inp
 as the game pattern. When comparing these arrays, the comparison kept coming back as false and the 
 nextSequence function would not be called as a result.
 
-However, it seemed that the console was logging the same results from both patterns. You can view an image 
-of the problem [here.](assets/images/bugs/compare-array-bug.jpg)  
+However, it seemed that the console was logging the same array results from both patterns. I have linked an image to show
+this. The first value in the console was from the gamePattern variable and the second is from the userPattern variable.
+You can view the image [here.](assets/images/bugs/compare-array-bug.jpg)  
 
 Solution:  
 
