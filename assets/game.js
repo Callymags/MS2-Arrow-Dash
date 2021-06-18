@@ -34,18 +34,29 @@ function nextSequence(randomDirection) {
 }
 
 $(".game-buttons").click(function () {
-        var userDirection = $(this).attr("id");
-        userPattern.push(userDirection);
+    var userDirection = $(this).attr("id");
+    userPattern.push(userDirection);
 
-        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
-        clickAudio.play();
+    var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
+    clickAudio.play();
 
-        if (userPattern === gamePattern) {
-            nextSequence();
-        } else {
-            $("#level-title").html("Wrong Answer Loser");
-        }
+    answerCheck(userPattern);
 
-        console.log(userPattern);
+    console.log(userPattern);
 
 });
+
+function answerCheck() {
+    if (userPattern.length === gamePattern.length) {
+        for (let i = 0; i < userPattern.length; i++) {
+            if (userPattern[i] === gamePattern[i]) {
+                nextSequence();
+            } else {
+                console.log("Wrong sequence");
+            }
+        }
+ 
+    } else {
+        console.log("Wrong length");
+    }
+}
