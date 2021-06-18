@@ -141,9 +141,9 @@ Solution: The easiest way to get around this was to clear my array when the star
 This allowed the userPattern array to be blank when the game starts. You can view the 
 solution [here.](assets/images/solutions/game-new-array.jpg)
 
-* **Comparison between userPattern and gamePattern variables always wrong**
+* **Creating a function to compare `userPattern` and `gamePattern` variables**
 
-To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same 
+Attempt 1: To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same 
 as the game pattern. I used the following code to do this comparison: 
 
 ```
@@ -161,6 +161,29 @@ array results from both patterns. I have linked an image to show this.
 
 The first value in the console was from the gamePattern variable and the second is from the userPattern variable.
 You can view the image [here.](assets/images/bugs/compare-array-bug.jpg)  
+
+Attempt 2: I then tried a solution I found in the Code Institute Slack channel. I tried to adapt it to my 
+own code which gave me the following code loop. 
+
+```
+function answerCheck() {
+    if (userPattern.length === gamePattern.length) {
+        for (let i = 0; i < userPattern.length; i++) {
+            if (userPattern[i] === gamePattern[i]) {
+                nextSequence();
+            } else {
+                console.log("Wrong sequence");
+            }
+        }
+    } else {
+        console.log("Wrong length");
+    }
+}
+```
+This loop would multiply my array by two and would still add another direction to the sequence 
+even if I got the sequence wrong. You can view an image 
+of the problem [here.](assets/images/bugs/compare-array-attempt-two.jpg)
+
 
 Solution:  
 
