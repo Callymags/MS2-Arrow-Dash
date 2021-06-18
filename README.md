@@ -144,11 +144,22 @@ solution [here.](assets/images/solutions/game-new-array.jpg)
 * **Comparison between userPattern and gamePattern variables always wrong**
 
 To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same 
-as the game pattern. When comparing these arrays, the comparison kept coming back as false and the 
-nextSequence function would not be called as a result.
+as the game pattern. I used the following code to do this comparison: 
 
-However, it seemed that the console was logging the same array results from both patterns. I have linked an image to show
-this. The first value in the console was from the gamePattern variable and the second is from the userPattern variable.
+```
+function answerCheck() {
+    if (userPattern === gamePattern) {
+        nextSequence();
+    } else {
+        $("#level-title").html("Wrong Answer Loser");
+}
+```
+
+However, when comparing these arrays, the comparison kept coming back as false and the 
+nextSequence function would not be called as a result even though it seemed that the console was logging the same 
+array results from both patterns. I have linked an image to show this. 
+
+The first value in the console was from the gamePattern variable and the second is from the userPattern variable.
 You can view the image [here.](assets/images/bugs/compare-array-bug.jpg)  
 
 Solution:  
