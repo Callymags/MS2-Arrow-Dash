@@ -47,15 +47,20 @@ $(".game-buttons").click(function () {
 });
 
 function answerCheck() {
+    var match = false; 
+    var i = 0; 
     if (userPattern.length === gamePattern.length) {
-        for (let i = 0; i < userPattern.length; i++) {
+        while (match = true && i < gamePattern.length) {
             if (userPattern[i] === gamePattern[i]) {
+                console.log("Matching");
+                i++;
                 nextSequence();
             } else {
+                match = false; 
                 console.log("Wrong sequence");
             }
         }
- 
+
     } else {
         console.log("Wrong length");
     }
