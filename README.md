@@ -209,7 +209,7 @@ at 0. I have attached an image that explains my methodology [here.](assets/image
 
 Once I had defined the `currentDirection` variable correctly, I could compare the two arrays by their index and 
 length. If both arrays had the same index and the same length, I could call the next sequence. You can view an 
-image of me testing this function [here.](assets/images/solutions/answer-check-final-fix.jpg)
+image of me testing this function [here.](assets/images/solutions/answercheck-final-fix.jpg)
 
 
 
