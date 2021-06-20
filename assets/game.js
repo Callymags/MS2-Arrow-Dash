@@ -5,6 +5,7 @@ var userPattern = [];
       for more information (https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery) */
 var started = false
 var level = 0;
+var answer = false;
 
 $(".start-button").click(function () {
     $(this).hide();
@@ -14,6 +15,7 @@ $(".start-button").click(function () {
 });
 
 function nextSequence(randomDirection) {
+    userPattern = [];
     var randomDirection = buttonDirections[Math.floor(Math.random() * 5)];
     gamePattern.push(randomDirection);
     level++;
@@ -40,28 +42,23 @@ $(".game-buttons").click(function () {
     var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
     clickAudio.play();
 
-    answerCheck(userPattern);
-
-    console.log(userPattern);
+    answerCheck();
 
 });
 
 function answerCheck() {
-    var match = false; 
-    var i = 0; 
-    if (userPattern.length === gamePattern.length) {
-        while (match = true && i < gamePattern.length) {
-            if (userPattern[i] === gamePattern[i]) {
-                console.log("Matching");
-                i++;
-                nextSequence();
-            } else {
-                match = false; 
-                console.log("Wrong sequence");
-            }
-        }
+    let currentDirection = userPattern.length -1;
 
-    } else {
-        console.log("Wrong length");
+    if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
+        console.log("Wrong");
+        level = 0;
+        userPattern = [];
+        gamePattern = [];
+        return started = false;
+    }
+
+    if (userPattern.length === gamePattern.length) {
+        console.log("Correct")
+        nextSequence();
     }
 }
