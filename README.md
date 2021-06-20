@@ -157,10 +157,8 @@ function answerCheck() {
 
 However, when comparing these arrays, the comparison kept coming back as false and the 
 nextSequence function would not be called as a result even though it seemed that the console was logging the same 
-array results from both patterns. I have linked an image to show this. 
-
-The first value in the console was from the gamePattern variable and the second is from the userPattern variable.
-You can view the image [here.](assets/images/bugs/compare-array-bug.jpg)  
+array results from both patterns. I have linked an image to show this. You can view the 
+image [here.](assets/images/bugs/compare-array-bug.jpg)  
 
 Attempt 2: I then tried a solution I found in the Code Institute Slack channel. I tried to adapt it to my 
 own code which gave me the following code loop. 
@@ -185,7 +183,36 @@ even if I got the sequence wrong. You can view an image
 of the problem [here.](assets/images/bugs/compare-array-attempt-two.jpg)
 
 
-Solution:  
+Solution: The following code block was my solution to the problem. 
+
+```
+function answerCheck() {
+    let currentDirection = userPattern.length -1;
+
+    if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
+        console.log("Wrong");
+        level = 0;
+        userPattern = [];
+        gamePattern = [];
+        return started = false;
+    }
+
+    if (userPattern.length === gamePattern.length) {
+        console.log("Correct")
+        nextSequence();
+    }
+}
+```
+The first thing I needed to do was define a variable that would give me the last index of the `userPattern` 
+array. The way I had to do this was by subtracting 1 from the `userPattern` length as an array’s index begins 
+at 0. I have attached an image that explains my methodology [here.](assets/images/solutions/defining-current-direction.jpg)
+
+Once I had defined the `currentDirection` variable correctly, I could compare the two arrays by their index and 
+length. If both arrays had the same index and the same length, I could call the next sequence. You can view an 
+image of me testing this function [here.](assets/images/solutions/answer-check-final-fix.jpg)
+
+
+
 
 
 
