@@ -50,15 +50,23 @@ function answerCheck() {
     let currentDirection = userPattern.length -1;
 
     if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
-        console.log("Wrong");
+        $("#level-title").html("Game Over");
+        var audio = new Audio("assets/sounds/wrong.mp3")
+        audio.play();
+
+        $(".start-button").show().html("Restart Game");
+
         level = 0;
         userPattern = [];
         gamePattern = [];
+
         return started = false;
     }
 
     if (userPattern.length === gamePattern.length) {
-        console.log("Correct")
-        nextSequence();
+        setTimeout(function (){
+            nextSequence();
+        }, 1000);
+        
     }
 }
