@@ -4,6 +4,16 @@ body {
   margin: 0;
 }
 
+.game-section,
+.game-navigation {
+  background-image: url("images/background/space-theme.jpg"); /* The image used */
+  background-color: black; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
 h1 {
     font-size: 5rem;
 }
@@ -28,9 +38,9 @@ ul {
 }
 /* --------------------------------GAME PAGE */
 
-#game-section {
+/* .game-section {
     min-height: 550px;
-}
+} */
 .game-buttons {
     font-size: 4.5rem;
     color: white;
