@@ -131,33 +131,6 @@ Solution: I copied the JavaScript lines into the browser console and left out th
 This allowed me to have a definition for a variable within my nextSequence function and confirm that the variable was 
 generating random directions.  
 
-* **User clicking on buttons before staring game added inputs to userPattern array**
-
-Before starting the game, I wanted users to be able to click the buttons and hear the noises that they make. However, 
-the code I had written did not remove these button clicks from the `userPattern` array once the game had started. 
-This resulted in the `userPattern` array being longer than the `gamePattern` array. You can view this code for the start game 
-function below. 
-```
-$(".start-button").click(function () {
-    $(this).hide();
-    started = true;
-    nextSequence();
-});
-```
-You can view an image of the problem [here.](assets/images/bugs/user-pattern-before-game.jpg)
-
-Solution: The easiest way to get around this was to clear my array when the start button was clicked. 
-This allowed the userPattern array to be blank when the game starts. You can view the solution in the code segment below.
- ```
-$(".start-button").click(function () {
-    $(this).hide();
-    started = true;
-    userPattern = [];
-    nextSequence();
-});
-```
-You can also view an image of solution in the console [here.](assets/images/solutions/game-new-array.jpg)
-
 * **Creating a function to compare `userPattern` and `gamePattern` variables**
 
 Attempt 1: To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same 
@@ -227,6 +200,56 @@ at 0. I have attached an image that explains my methodology [here.](assets/image
 Once I had defined the `currentDirection` variable correctly, I could compare the two arrays by their index and 
 length. If both arrays had the same index and the same length, I could call the next sequence. You can view an 
 image of me testing this function [here.](assets/images/solutions/answercheck-final-fix.jpg)
+
+* **`answerCheck` function called if user clicked buttons before starting game**
+
+Problem: Before starting the game, I wanted users to be able to click the game buttons and hear the noises that they 
+make. However, the code I had written resulted in the browser showing the ‘Game Over’ title and the ‘Restart game’ 
+button if the user clicked these game buttons before starting the game.
+
+The reason this happened was because my code pushed the button click to the `userPattern` array and this would then be 
+marked as wrong because I did not specify that these button clicks should not be compared to the `gamePattern` array 
+before the game had started. You can see the error in my original code below.
+
+```
+$(".game-buttons").click(function () {
+        var userDirection = $(this).attr("id");
+        userPattern.push(userDirection);
+
+        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
+        clickAudio.play();
+
+        answerCheck();
+}
+```
+You can also view an image of the problem in the following images: 
+1.	Browser before clicking game button. [View Image.] (assets/images/bugs/browser-before-pressing-game-button.jpg)
+2.	Browser after clicking game button. [View Image.] (assets/images/bugs/button-press-before-game-start.jpg)
+
+Solution: To correct this, I needed to add an if/else statement to my function which would allow the user to 
+click the buttons before starting the game without these clicks being pushed to the `userPattern` array and 
+without the `answerCheck` function comparing them to the `gamePattern` array. You can view this if/else statement below. 
+
+```
+$(".game-buttons").click(function () {
+    if (started === true) {
+        var userDirection = $(this).attr("id");
+        userPattern.push(userDirection);
+
+        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
+        clickAudio.play();
+
+        answerCheck();
+
+    } else {
+        var userDirection = $(this).attr("id");
+
+        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
+        clickAudio.play();
+    }
+}
+```
+
 
 
 
