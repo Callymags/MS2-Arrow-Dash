@@ -10,7 +10,6 @@ var answer = false;
 $(".start-button").click(function () {
     $(this).hide();
     started = true;
-    userPattern = [];
     nextSequence();
 });
 
@@ -36,13 +35,22 @@ function nextSequence(randomDirection) {
 }
 
 $(".game-buttons").click(function () {
-    var userDirection = $(this).attr("id");
-    userPattern.push(userDirection);
+    if (started === true) {
+        var userDirection = $(this).attr("id");
+        userPattern.push(userDirection);
 
-    var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
-    clickAudio.play();
+        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
+        clickAudio.play();
 
-    answerCheck();
+        answerCheck();
+
+    } else {
+        var userDirection = $(this).attr("id");
+
+        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
+        clickAudio.play();
+    }
+   
 
 });
 
