@@ -134,12 +134,29 @@ generating random directions.
 * **User clicking on buttons before staring game added inputs to userPattern array**
 
 Before starting the game, I wanted users to be able to click the buttons and hear the noises that they make. However, 
-I did not want these inputs to be added to the userPattern array. This array needed to be blank when the game 
-starts. You can view an image of the problem [here.](assets/images/bugs/user-pattern-before-game.jpg)
+the code I had written did not remove these button clicks from the `userPattern` array once the game had started. 
+This resulted in the `userPattern` array being longer than the `gamePattern` array. You can view this code for the start game 
+function below. 
+```
+$(".start-button").click(function () {
+    $(this).hide();
+    started = true;
+    nextSequence();
+});
+```
+You can view an image of the problem [here.](assets/images/bugs/user-pattern-before-game.jpg)
 
 Solution: The easiest way to get around this was to clear my array when the start button was clicked. 
-This allowed the userPattern array to be blank when the game starts. You can view the 
-solution [here.](assets/images/solutions/game-new-array.jpg)
+This allowed the userPattern array to be blank when the game starts. You can view the solution in the code segment below.
+ ```
+$(".start-button").click(function () {
+    $(this).hide();
+    started = true;
+    userPattern = [];
+    nextSequence();
+});
+```
+You can also view an image of solution in the console [here.](assets/images/solutions/game-new-array.jpg)
 
 * **Creating a function to compare `userPattern` and `gamePattern` variables**
 
