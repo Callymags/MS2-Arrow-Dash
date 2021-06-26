@@ -223,8 +223,8 @@ $(".game-buttons").click(function () {
 }
 ```
 You can also view an image of the problem in the following images: 
-1.	Browser before clicking game button. [View Image.] (assets/images/bugs/browser-before-pressing-game-button.jpg)
-2.	Browser after clicking game button. [View Image.] (assets/images/bugs/button-press-before-game-start.jpg)
+1.	Browser before clicking game button. [View Image.](assets/images/bugs/browser-before-pressing-game-button.jpg)
+2.	Browser after clicking game button. [View Image.](assets/images/bugs/button-press-before-game-start.jpg)
 
 Solution: To correct this, I needed to add an if/else statement to my function which would allow the user to 
 click the buttons before starting the game without these clicks being pushed to the `userPattern` array and 
