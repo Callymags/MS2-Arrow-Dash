@@ -2,16 +2,7 @@ body {
   background-color: black;
   color: white;
   margin: 0;
-}
-
-.game-section,
-.game-navigation {
-  background-image: url("images/background/space-theme.jpg"); /* The image used */
-  background-color: black; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+  padding: 0;
 }
 
 h1 {
@@ -20,7 +11,6 @@ h1 {
 
 /* --------------------------------LANDING PAGE */
 .game-navigation {
-    height: 85vh;
 }
 
 ul {
@@ -29,7 +19,8 @@ ul {
 
 .list-item {
     font-size: 4.5rem;
-    margin-top: 5.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .list-link {
@@ -37,10 +28,6 @@ ul {
     color: white;
 }
 /* --------------------------------GAME PAGE */
-
-/* .game-section {
-    min-height: 550px;
-} */
 .game-buttons {
     font-size: 4.5rem;
     color: white;
@@ -48,12 +35,6 @@ ul {
 
 
 /* --------------------------------FOOTER */
-footer {
-    padding-top: 1.5rem;
-    height: 10vh;
-    position: relative;
-    bottom: 0;
-}
 .social-link {
     font-size: 2rem;
     padding-bottom: 4rem;
