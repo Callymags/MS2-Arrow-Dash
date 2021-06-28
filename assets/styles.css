@@ -46,8 +46,15 @@ h1 {
 }
 /* --------------------------------FOOTER */
 
+footer {
+    background-color: #f8f9fa;
+}
+
 .social-link {
     font-size: 2rem;
-    padding-bottom: 2rem;
-    color: white;
+    color: #336888
+}
+
+.social-link:hover {
+    color: #1d79af;
 }
