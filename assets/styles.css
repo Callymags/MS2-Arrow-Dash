@@ -15,7 +15,7 @@ h1 {
 }
 
 .game-brand {
-    height: 5.5rem;
+    height: 4rem;
     width: auto;
 }
 
@@ -36,11 +36,16 @@ h1 {
     color: white;
 }
 /* --------------------------------GAME PAGE */
+.navbar {
+    padding-bottom: 0;
+    padding-top: 0;
+}
 .game-buttons {
     font-size: 4.5rem;
     color: white;
 }
 /* --------------------------------FOOTER */
+
 .social-link {
     font-size: 2rem;
     padding-bottom: 2rem;
