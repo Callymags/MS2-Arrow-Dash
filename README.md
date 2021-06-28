@@ -250,6 +250,20 @@ $(".game-buttons").click(function () {
 }
 ```
 
+* **Whitespace below footer**
+
+Problem: When styling the index and game page, I had a problem pushing the footer down to the bottom of the 
+screen. You can see the problem [here.](assets/images/bugs/whitespace-beneath-footer.jpg) 
+
+Solution: I found the solution to this problem on a Stack Overflow thread. The solution allowed for a responsive 
+footer with no fixed height that was pushed to the end of the screen on all devices except the iPad and iPad Pro. 
+This was done using the flex display feature in CSS. You can view the link to the 
+thread [here.](https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b)
+
+I have also linked this thread in the contributions section of this ReadMe. 
+
+
+
 
 
 
@@ -267,5 +281,7 @@ was generated. [View here.]( https://stackoverflow.com/questions/9419263/how-to-
 * The following thread helped me start the game sequence once the user clicked on the screen 
 for the first time. [View here.]( https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery) 
 
+* The following thread allowed me to push the footer down to the bottom of the screen on all devices besides 
+the iPad & iPad Pro. [View here]( https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b) 
 
 
