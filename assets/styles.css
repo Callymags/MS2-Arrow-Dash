@@ -1,8 +1,13 @@
 body {
   background-color: black;
   color: white;
-  margin: 0;
-  padding: 0;
+}
+
+#container,
+#game-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1 {
@@ -10,11 +15,9 @@ h1 {
 }
 
 /* --------------------------------LANDING PAGE */
-.game-navigation {
-}
-
-ul {
-    list-style-type: none;
+#game-navigation,
+#game-section {
+    flex: 1;
 }
 
 .list-item {
@@ -32,10 +35,8 @@ ul {
     font-size: 4.5rem;
     color: white;
 }
-
-
 /* --------------------------------FOOTER */
 .social-link {
     font-size: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
