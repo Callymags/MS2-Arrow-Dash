@@ -118,7 +118,10 @@ I was looking to have on the game page.
 * [AudioTrimmer:](https://audiotrimmer.com/) Used to shorten audio files I recorded from my phone.
 * [Balsamiq:](https://balsamiq.com/) Used to draw up wireframes so that I could visualise the design of the game.
 * [PDF2JPG:](https://pdf2jpg.net/) Used to convert exported wireframe PDFs to JPG images that can be viewed in ReadMe. 
-
+* [Canva:]( https://www.canva.com/) Used to create a simple logo for the game. 
+* [Windows Paint 3D:](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) Used to create 
+a transparent PNG of the logo created on Canva.  
+* [Color Hunt:](https://colorhunt.co/) Used to find a suitable background colours for styling.    
 
 
 ## Bugs Encountered 
