@@ -1,14 +1,17 @@
+html,body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
   background-color: black;
   color: white;
 }
 
-#container,
-#game-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+
+
 
 h1 {
     font-size: 5rem;
@@ -20,6 +23,14 @@ h1 {
 }
 
 /* --------------------------------LANDING PAGE */
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #game-navigation,
 #game-section {
     flex: 1;
@@ -44,9 +55,17 @@ h1 {
     font-size: 4.5rem;
     color: white;
 }
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
 /* --------------------------------FOOTER */
 
-footer {
+#footer {
     background-color: #f8f9fa;
 }
 
