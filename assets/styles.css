@@ -21,10 +21,10 @@ h1 {
 }
 
 /* --------------------------------LANDING PAGE */
-#container {
+#game-navigation-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
     padding-left: 0;
     padding-right: 0;
 }
@@ -32,6 +32,10 @@ h1 {
 #game-navigation,
 #game-section {
     flex: 1;
+}
+
+#home-footer {
+    background-color: #f8f9fa;
 }
 
 .list-item {
@@ -57,7 +61,7 @@ h1 {
 #game-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
     padding-left: 0;
     padding-right: 0;
 }
@@ -72,7 +76,7 @@ h1 {
 }
 /* --------------------------------FOOTER */
 
-#footer {
+#game-footer {
     background-color: #f8f9fa;
 }
 
