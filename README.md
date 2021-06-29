@@ -262,6 +262,26 @@ thread [here.](https://stackoverflow.com/questions/643879/css-to-make-html-page-
 
 I have also linked this thread in the contributions section of this ReadMe. 
 
+* **White space to the right of html and body**
+
+Problem: There was white space to the right of the game page. Through further investigation, I found that the 
+body was not extending the full width of the screen to fill this space. You can view an image of the 
+problem [here.](assets/images/bugs/whitespace-right-of-body.jpg)
+
+Solution: To fix this, I added the css style `overflow-x: hidden` to the html, and the body of the page. You can 
+view the full code section below. 
+
+```
+html,
+body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+```
+
+
 
 
 
