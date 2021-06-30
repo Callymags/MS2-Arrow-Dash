@@ -62,7 +62,21 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 
 .list-link {
     text-decoration: none;
-    color: white;
+    color: #f8f9fa;
+}
+
+.list-link:hover {
+    color: #9BA4B4;
+}
+
+.list-button {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.list-button:hover {
+    background-color: #9BA4B4;
+    border-color: #9BA4B4;
 }
 /* --------------------------------GAME PAGE */
 .navbar {
@@ -99,12 +113,16 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 /* Contribution from W3 schools ended */
 
 .start-button {
-    background-color: #212529;
-    border: 0;
+    /* background-color: #212529; */
+    background-color: white;
+    color: #00416D;
+    border-color: white;
 }
 
 .start-button:hover {
     background-color: #1d79af;
+    border-color: #1d79af;
+    color: white;
 }
 /* --------------------------------FOOTER */
 
