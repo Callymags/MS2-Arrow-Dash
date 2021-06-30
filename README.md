@@ -283,6 +283,31 @@ body
     overflow-x: hidden;
 }
 ```
+* **Containers in the main section of landing page and game page not vertically aligned**
+
+Problem: The elements in the main section of both pages would stick to the top of the screen just under the navbar. 
+This meant that there was a lot of space above the footer. You can view an image of the problem by clicking the links below. 
+
+•	[Landing Page.](assets/images/bugs/landing-page-vertical-alignment-problem.jpg)
+•	[Game Page.](assets/images/bugs/game-page-vertical-alignment-problem.jpg)
+
+Solution: I found a thread on the W3 Schools page that addressed the problem. This thread has been mentioned in the 
+contributions section of this document. You can view the code snippet that fixed the problem on the game page below. 
+I also used the same code for the landing page. 
+```
+.game-container {
+    min-height: 90vh;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+```  
 
 
 
@@ -306,5 +331,10 @@ for the first time. [View here.]( https://stackoverflow.com/questions/9336700/ta
 
 * The following thread allowed me to push the footer down to the bottom of the screen on all devices besides 
 the iPad & iPad Pro. [View here]( https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b) 
+
+2. **W3 Schools**
+•	The following thread helped me to vertically align my containers on both the landing page and the 
+game page. [View here.]( https://www.w3schools.com/howto/howto_css_center-vertical.asp) 
+
 
 
