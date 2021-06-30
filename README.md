@@ -334,7 +334,7 @@ the iPad & iPad Pro. [View here]( https://stackoverflow.com/questions/643879/css
 
 2. **W3 Schools**
 
-*	The following thread helped me to vertically align my containers on both the landing page and the 
+* The following thread helped me to vertically align my containers on both the landing page and the 
 game page. [View here.]( https://www.w3schools.com/howto/howto_css_center-vertical.asp) 
 
 
