@@ -30,7 +30,9 @@
                 </div>
                 <div class="row text-center">
                     <div class="col list-item">
-                        <h3><a href="#" class="list-link">Rules</a></h3>
+                        <button type="button" class="btn list-link" data-bs-toggle="modal" data-bs-target="#rulesModal">
+                        <h3>Rules</h3>
+                        </button>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -59,7 +61,34 @@
         </div>
     </footer>
 
+    <!-- RULES MODAL -->
+    <div class="modal fade" id="rulesModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="rulesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rulesModalLabel">Rules</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Follow the correct pattern given to you by the Audio directions. You will need to remember 
+                        and repeat the pattern as it increases. The length of the sequence will increase each 
+                        time you get the pattern right. Remember to focus only on the AUDIO directions. </p>
+                    <br>
+                    <p>When you hear the audio directions, a button will also be clicked at the same time. 
+                        Don’t let this button click distract you! 
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="assets/game.js" charset="utf-8"></script>
 </body>
 

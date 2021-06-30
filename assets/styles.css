@@ -8,7 +8,6 @@ body
 
 body {
   background-color: #00416D;
-  color: white;
 }
 
 h1 {
@@ -18,6 +17,10 @@ h1 {
 .game-brand {
     height: 4rem;
     width: auto;
+}
+
+#rules-modal {
+    color: black;
 }
 
 /* --------------------------------LANDING PAGE */
@@ -67,16 +70,6 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 
 .list-link:hover {
     color: #9BA4B4;
-}
-
-.list-button {
-    background-color: #f8f9fa;
-    border-color: #f8f9fa;
-}
-
-.list-button:hover {
-    background-color: #9BA4B4;
-    border-color: #9BA4B4;
 }
 /* --------------------------------GAME PAGE */
 .navbar {
