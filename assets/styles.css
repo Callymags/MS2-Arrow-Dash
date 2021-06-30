@@ -24,7 +24,6 @@ h1 {
 #game-navigation-container {
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
     padding-left: 0;
     padding-right: 0;
 }
@@ -33,6 +32,23 @@ h1 {
 #game-section {
     flex: 1;
 }
+
+/* Contribution from W3 Schools to vertically center elements in a container. 
+Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+.nav-container {
+    min-height: 90vh;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* Contribution from W3 schools ended */
+
 
 #home-footer {
     background-color: #f8f9fa;
@@ -58,13 +74,29 @@ h1 {
     color: white;
 }
 
-#game-container {
+#game-page {
     display: flex;
     flex-direction: column;
     min-height: 90vh;
     padding-left: 0;
     padding-right: 0;
 }
+
+/* Contribution from W3 Schools to vertically center elements in a container. 
+Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+.game-container {
+    min-height: 90vh;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* Contribution from W3 schools ended */
 
 .start-button {
     background-color: #212529;
