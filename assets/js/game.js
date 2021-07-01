@@ -1,8 +1,6 @@
 let buttonDirections = ["up", "down", "left", "right", "buzz"]
 let gamePattern = [];
 let userPattern = [];
-/*    Start document on click function below was taken from stackoverflow. See ReadMe Contributions section 
-      for more information (https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery) */
 let started = false
 let level = 0;
 let answer = false;
