@@ -1,11 +1,11 @@
-var buttonDirections = ["up", "down", "left", "right", "buzz"]
-var gamePattern = [];
-var userPattern = [];
+let buttonDirections = ["up", "down", "left", "right", "buzz"]
+let gamePattern = [];
+let userPattern = [];
 /*    Start document on click function below was taken from stackoverflow. See ReadMe Contributions section 
       for more information (https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery) */
-var started = false
-var level = 0;
-var answer = false;
+let started = false
+let level = 0;
+let answer = false;
 
 $(".start-button").click(function () {
     $(this).hide();
@@ -15,7 +15,7 @@ $(".start-button").click(function () {
 
 function nextSequence(randomDirection) {
     userPattern = [];
-    var randomDirection = buttonDirections[Math.floor(Math.random() * 5)];
+    let randomDirection = buttonDirections[Math.floor(Math.random() * 5)];
     gamePattern.push(randomDirection);
     level++;
     $("#level-title").html("Level " + gamePattern.length);
@@ -27,7 +27,7 @@ function nextSequence(randomDirection) {
     audio.play();
 
 
-    var wrongDirection = buttonDirections[Math.floor(Math.random() * 5)];
+    let wrongDirection = buttonDirections[Math.floor(Math.random() * 5)];
     $("#" + wrongDirection).fadeOut(100).fadeIn(100);
 
     console.log(gamePattern);
@@ -36,10 +36,10 @@ function nextSequence(randomDirection) {
 
 $(".game-buttons").click(function () {
     if (started === true) {
-        var userDirection = $(this).attr("id");
+        let userDirection = $(this).attr("id");
         userPattern.push(userDirection);
 
-        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
+        let clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
         clickAudio.play();
 
         answerCheck();
@@ -68,7 +68,8 @@ function answerCheck() {
         userPattern = [];
         gamePattern = [];
 
-        return started = false;
+        started = false;
+        return;
     }
 
     if (userPattern.length === gamePattern.length) {
