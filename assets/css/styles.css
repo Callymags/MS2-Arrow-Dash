@@ -38,7 +38,7 @@ h1 {
 
 /* Contribution from W3 Schools to vertically center elements in a container. 
 Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
-.nav-container {
+.list-container {
     min-height: 90vh;
     position: relative;
 }

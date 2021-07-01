@@ -16,7 +16,7 @@ $(".start-button").click(function () {
 });
 
 function getRandomButton() {
-    return buttonDirections[Math.floor(Math.random() * buttonDirections.length)];
+    return buttonDirections[Math.floor(Math.random() * buttonDirections.length)] + "-btn";
 }
 
 function getAudio(soundDirection) {
