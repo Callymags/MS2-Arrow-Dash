@@ -4,38 +4,30 @@ let userPattern = [];
 let started = false
 let level = 0;
 let answer = false;
-// let score = gamePattern.length;
 const nextSequenceDelay = 1000;
 const assetsFolder = "assets/sounds/"
-// var highScore = localStorage.getItem("highScore");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-// function saveHighScore() {
-//     if (highscore !== null) {
-//         if (score > highscore) {
-//             localStorage.setItem("highscore", score);
-//         }
-//     } else {
-//         localStorage.setItem("highscore", score);
-//     }
+$("#score-div p").html("High Score: " + highScores);
 
-//     console.log(highScores);
-// } 
 
-$(".restart-button").hide();
+function saveHighScore() {
+    let score = gamePattern.length;
+    highScores.push(score);
+    highScores.sort(function(a, b){return b-a});
+    highScores.splice(1);
 
-$(".restart-button").click(function () {
-    $(this).hide();
-    started = true;
-    level = 0;
-    userPattern = [];
-    gamePattern = [];
-    nextSequence();
-});
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+    console.log(highScores);
+}
 
 $(".start-button").click(function () {
     $(this).hide();
     started = true;
+    $("#score-div p").html("High Score: " + highScores);
     level = 0;
+    userPattern = [];
+    gamePattern = [];
     nextSequence();
 });
 
@@ -93,10 +85,13 @@ function answerCheck() {
     if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
         $("#level-title").html("Game Over");
         getAudio("wrong").play();
-        $("#score-div").html("You reached Level " + gamePattern.length);
-        // saveHighScore(); 
+        $("#score-div p").html("You reached Level " + gamePattern.length);
+
+        // Compare score of game to current High Score stored in local storage
+        saveHighScore();
+
         // Restart Button will appear on screen to begin game again
-        $(".restart-button").show();
+        $(".start-button").show().html("Restart Game");
         started = false;
         return;  
           
