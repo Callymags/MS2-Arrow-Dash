@@ -7,9 +7,21 @@ let answer = false;
 const nextSequenceDelay = 1000;
 const assetsFolder = "assets/sounds/"
 
+$(".restart-button").hide();
+
+$(".restart-button").click(function () {
+    $(this).hide();
+    started = true;
+    level = 0;
+    userPattern = [];
+    gamePattern = [];
+    nextSequence();
+});
+
 $(".start-button").click(function () {
     $(this).hide();
     started = true;
+    level = 0;
     nextSequence();
 });
 
@@ -25,7 +37,7 @@ function getAudio(soundDirection) {
 function nextSequence() {
     userPattern = [];
     level++;
-    $("#level-title").html("Level " + gamePattern.length);
+    $("#level-title").html("Level " + (gamePattern.length + 1));
 
     // Generate the random direction that the user must follow
     let randomDirection = getRandomButton();
@@ -66,14 +78,17 @@ function answerCheck() {
 
     if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
         $("#level-title").html("Game Over");
+        $("#score-div").html("You reached Level " + gamePattern.length);
         getAudio("wrong").play();
         // Restart Button will appear on screen to begin game again
-        $(".start-button").show().html("Restart Game");
-        level = 0;
-        userPattern = [];
-        gamePattern = [];
+        $(".restart-button").show();
         started = false;
         return;
+
+        // level = 0;
+        // userPattern = [];
+        // gamePattern = [];
+       
     }
     if (userPattern.length === gamePattern.length) {
         setTimeout(function (){

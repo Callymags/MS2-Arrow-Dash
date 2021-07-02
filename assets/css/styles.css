@@ -109,13 +109,15 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 }
 /* Contribution from W3 schools ended */
 
-.start-button {
+.start-button,
+.restart-button {
     background-color: #39b7ff;
     border-color: #39b7ff;
     color: white;
 }
 
-.start-button:hover {
+.start-button:hover,
+.restart-button:hover {
     background-color: #3292ca;
     color: white;
     border-color: #3292ca;
