@@ -338,7 +338,8 @@ the iPad & iPad Pro. [View here]( https://stackoverflow.com/questions/643879/css
 game page. [View here.]( https://www.w3schools.com/howto/howto_css_center-vertical.asp) 
 
 3. **YouTube**
-•	The following thread helped me to store a player’s high score to local storage and display this on the game page. [View here.]( https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s)  
+
+* The following thread helped me to store a player’s high score to local storage and display this on the game page. [View here.]( https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s)  
 
 
 
