@@ -4,8 +4,22 @@ let userPattern = [];
 let started = false
 let level = 0;
 let answer = false;
+// let score = gamePattern.length;
 const nextSequenceDelay = 1000;
 const assetsFolder = "assets/sounds/"
+// var highScore = localStorage.getItem("highScore");
+
+// function saveHighScore() {
+//     if (highscore !== null) {
+//         if (score > highscore) {
+//             localStorage.setItem("highscore", score);
+//         }
+//     } else {
+//         localStorage.setItem("highscore", score);
+//     }
+
+//     console.log(highScores);
+// } 
 
 $(".restart-button").hide();
 
@@ -78,17 +92,14 @@ function answerCheck() {
 
     if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
         $("#level-title").html("Game Over");
-        $("#score-div").html("You reached Level " + gamePattern.length);
         getAudio("wrong").play();
+        $("#score-div").html("You reached Level " + gamePattern.length);
+        // saveHighScore(); 
         // Restart Button will appear on screen to begin game again
         $(".restart-button").show();
         started = false;
-        return;
-
-        // level = 0;
-        // userPattern = [];
-        // gamePattern = [];
-       
+        return;  
+          
     }
     if (userPattern.length === gamePattern.length) {
         setTimeout(function (){
