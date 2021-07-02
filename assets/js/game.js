@@ -10,7 +10,8 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 $("#score-div p").html("High Score: " + highScores);
 
-
+/* Code for saving score to local storage was accomplished through watching the following YouTube tutorial. 
+Link: https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s */ 
 function saveHighScore() {
     let score = gamePattern.length;
     highScores.push(score);
