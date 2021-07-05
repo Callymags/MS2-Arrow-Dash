@@ -138,3 +138,16 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
     /* color: #3292ca; */
     color: grey;
 }
+
+/* MODALS */
+.btn-color {
+    background-color: #39b7ff;
+    border-color: #39b7ff;
+    color: white;
+}
+
+.btn-color:hover {
+    background-color: #3292ca;
+    color: white;
+    border-color: #3292ca;
+}
