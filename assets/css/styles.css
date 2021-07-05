@@ -43,7 +43,7 @@ h1 {
 /* Contribution from W3 Schools to vertically center elements in a container. 
 Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 .list-container {
-    min-height: 90vh;
+    min-height: 80vh;
     position: relative;
 }
 
@@ -63,8 +63,8 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 
 .list-item {
     font-size: 4.5rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .list-link {
@@ -96,16 +96,13 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
     display: flex;
     flex-direction: column;
     min-height: 90vh;
+    position: relative;
     padding-left: 0;
     padding-right: 0;
 }
 
 /* Contribution from W3 Schools to vertically center elements in a container. 
 Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
-.game-container {
-    min-height: 90vh;
-    position: relative;
-}
 
 .vertical-center {
     margin: 0;
