@@ -309,6 +309,24 @@ I also used the same code for the landing page.
 }
 ```  
 
+* **Game buttons not centrally aligned in screens under 320px**
+
+Problem: The central row of my game page contained 3 columns with a game button in each one. There was a problem with how three of these buttons aligned when displaying them on narrow screen sizes under 320px. You can view an image of the problem [here.](assets/images/bugs/game-buttons-alignment-bug.jpg)
+
+Solution: To align these buttons on narrower screens, I added a media query that removed the padding on these game buttons when the screen width was lower than 320px. I used the following media query to achieve this. 
+
+```
+@media screen and (max-width: 320px) {
+    .game-buttons {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}  
+
+```
+You can also view an image of the solution [here.](assets/images/solutions/game-buttons-alignment-solution.jpg)
+
+
 
 
 
