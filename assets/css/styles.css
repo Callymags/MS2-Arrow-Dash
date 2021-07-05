@@ -10,10 +10,6 @@ body {
   background-color: #E4EFE7;
 }
 
-h1 {
-    font-size: 5rem;
-}
-
 .game-brand {
     height: 4rem;
     width: auto;
@@ -87,9 +83,14 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
     padding-bottom: 0;
     padding-top: 0;
 }
+
 .game-buttons {
     font-size: 4.5rem;
     color: black;
+}
+
+h1 {
+    font-size: 3.5rem;
 }
 
 #game-page {

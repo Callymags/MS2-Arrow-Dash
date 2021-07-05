@@ -66,6 +66,7 @@ Grabs the input from the user and executes the logic associated with the game
 */
 $(".game-buttons").click(function () {
     let userDirection = $(this).attr("id");
+    $(this).fadeOut(100).fadeIn(100);
     let clickAudio = getAudio(userDirection)
 
     if (started === true) {
