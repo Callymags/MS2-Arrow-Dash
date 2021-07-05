@@ -75,6 +75,13 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 .list-link:hover {
     color: #9BA4B4;
 }
+
+@media screen and (max-width: 320px) {
+    .game-buttons {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}    
 /* --------------------------------GAME PAGE */
 .navbar {
     padding-bottom: 0;
