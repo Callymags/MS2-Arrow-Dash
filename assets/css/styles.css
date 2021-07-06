@@ -7,10 +7,8 @@ body
     padding: 0px;
     overflow-x: hidden;
     font-family: 'Encode Sans SC', sans-serif;
-}
-
-body {
-  background-color: #E4EFE7;
+    color: #171010;
+    background-color: #E4EFE7;
 }
 
 .game-brand {
@@ -18,11 +16,6 @@ body {
     width: auto;
     background-color: #f8f9fa;
 }
-
-#rules-modal {
-    color: black;
-}
-
 /* --------------------------------LANDING PAGE */
 .bg-blue {
    background-color: #3cb7ff; 
@@ -68,7 +61,6 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 
 .list-link {
     text-decoration: none;
-    color: black;
 }
 
 .list-link:hover {
@@ -89,7 +81,10 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 
 .game-buttons {
     font-size: 4.5rem;
-    color: black;
+}
+
+.game-buttons:hover {
+    color: #444447;
 }
 
 h1 {
@@ -138,12 +133,10 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 
 .social-link {
     font-size: 2rem;
-    /* color: #39b7ff; */
-    color: black;
+    color: #171010;
 }
 
 .social-link:hover {
-    /* color: #3292ca; */
     color: grey;
 }
 
