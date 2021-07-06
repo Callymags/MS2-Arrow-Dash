@@ -11,7 +11,7 @@
   * [Wireframes](#wireframes)
 * [Features](#features)
   * [Landing Page Features](#landing-page-features)
-  * [Features Left to Implement](#features-left-to-implement)
+  * [Future Features Left to Implement](#future-features)
 * [Technologies Used](#technologies-used)
   * [Languages](#languages)
   * [Frameworks](#frameworks)
@@ -144,18 +144,30 @@ I was looking to have on the game page.
 * Game Leader board: Another feature would be to add a leader board where users could insert their name and save their score for their friends to try and beat them. 
 * Different difficulties for the game: The user could pick which difficulty they wanted before starting the game. I could then add different elements to make the game harder. E.g a timer
 
-
-
 ## Technologies Used
+### Languages 
+* [HTML](https://en.wikipedia.org/wiki/HTML5) 
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+* [JavaScript](https://www.javascript.com/) 
+
 ### Frameworks 
+* [jQuery:](https://jquery.com/) Used to simplify the JavaScript code and manipulate the DOM to provide the correct functionality.
+* [Bootstrap 5.01:](https://getbootstrap.com/) Used to style the index and game page and help with the website’s responsiveness. 
+* [Google Developer Tools:](https://developer.chrome.com/docs/devtools/) Used to test responsive elements of page and to fix bugs.
+* [Git:](https://git-scm.com/) Useful to control and document page versions through git commits and git pushes.
+* [Github:](https://github.com/) Used to store project code and to deploy the website.
 * [Audio Converter:](https://online-audio-converter.com/) Used to change audio files recorded on my phone to mp3 format.
 * [AudioTrimmer:](https://audiotrimmer.com/) Used to shorten audio files I recorded from my phone.
 * [Balsamiq:](https://balsamiq.com/) Used to draw up wireframes so that I could visualise the design of the game.
 * [PDF2JPG:](https://pdf2jpg.net/) Used to convert exported wireframe PDFs to JPG images that can be viewed in ReadMe. 
 * [Canva:]( https://www.canva.com/) Used to create a simple logo for the game. 
-* [Windows Paint 3D:](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) Used to create 
-a transparent PNG of the logo created on Canva.  
-* [Color Hunt:](https://colorhunt.co/) Used to find a suitable background colours for styling.    
+* [Windows Paint 3D:](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) Used to create a transparent PNG of the logo created on Canva.  
+* [Color Hunt:](https://colorhunt.co/) Used to find a suitable background colours for styling.  
+* [Favicon.io:](https://favicon.io/favicon-converter/)Used to convert the arrow dash logo to favicon format.   
+
+### Libraries
+* [Google fonts:](https://fonts.google.com/) Used to find appropriate fonts for content of both the index and game page.
+* [Font Awesome:](https://fontawesome.com/icons?d=gallery&p=2) Provided the icons for the game buttons and the social media links in the footer. 
 
 
 ## Bugs Encountered 
