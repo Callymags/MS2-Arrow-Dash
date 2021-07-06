@@ -111,6 +111,40 @@ I was looking to have on the game page.
 * [Contact](wireframes/ms2-contact-us-modal.jpg)
 
 
+## Features 
+### Landing Page Features
+* Navbar: The navbar on the landing page displays the game logo and nothing else. I decided to keep the navbar on the landing page to keep with the same style and layout as the game page.
+* Background colour: The sections of the landing page (navbar, container, and footer) switch between a shade of blue and grey making them more identifiable. 
+* Font: I decided to go with the font Encode Sans SC which puts all letters in capitals. I did this because the game logo is all capitals and there is not a lot of written content on the site.
+* External links: There are two links in the footer which open in a separate tab. These links will lead the user to my GitHub and LinkedIn page.
+* Title bar favicon: The title bar displays the Arrow Dash logo in favicon format instead of the default favicon.
+* Landing Page Options: There are three options on the landing page: Game, Rules, and Contact Us. The user will be led to a different page once clicking on the game option. The other two options are modals and will keep the user on the same page. 
+* Rules Modal: The Rules modal gives the user the basic rules of the game. They can read this also on the game page.
+* Contact Us Modal: The user’s message from the Contact Us modal will be sent to my email. The user will receive a pop up after clicking the ‘Send Message’ option that will notify them if the message was sent successfully or not. You can view these modals below. 
+1. Message sent successfully modal. View [here.](assets/images/documentation/message-sent-success-modal.jpg)
+2. Message failed to send modal. View [here.](assets/images/documentation/message-failed-modal.jpg)
+
+
+### Game Page Features
+* Navbar: The navbar on the game page displays the game logo, the game Rules modal link and the Contact Us modal link. The navbar background is the same colour as the logo.
+* Navbar: The navbar has a responsive toggle hamburger for smaller devices which will keep the navbar from looking cluttered.
+* Background colour: There are three sections of the game page: the navbar, the game-container, and the footer. The game-container and the footer have the same grey colour while the navbar has a light-blue colour. 
+* Font: The font on the game page is the same as the landing page. 
+* Game container: The user will be able to press the buttons and hear the sounds associated with each button before starting the game. Once the user wants to begin, they can press the start button and the first sequence will begin.  
+* Audio direction vs Button Click direction: After investigating into which element I should use as the correct sequence (Audio/Button Click), I decided to go with the voice sequence as this would mean the user would have to use their audio on their device. Otherwise, the user could just turn the volume down and follow the button clicks which would take away from the game experience. 
+* Level Change: Once the user begins the game, the level number at the top of the page will change as they progress. If the user gets further than their previous score, they will see their new high score under the game buttons as a reference of what they are trying to beat. 
+* Restart Game: If the user inputs an incorrect sequence, the user will hear a distinct noise and see the title changing to Game over. They will also see a reference underneath the game buttons where the high score was which will give them a reference as to what level they have reached. Once the user hits the restart button, the game sequence will refresh, and the level number will begin again. 
+* Rules Modal: It was important to also place an option to review the rules on the game page just in case the user is a bit confused as to how the game works. This way, the user will not have to revert to the landing page to read the rules. 
+* Contact Us Modal: The users can also access the Contact Us modal from the game page.
+* External links: There are two links in the footer which open in a separate tab. These links will lead the user to my GitHub and LinkedIn page.
+* Title bar favicon: The title bar displays the Arrow Dash logo in favicon format instead of the default favicon.
+
+### Future Features
+* Save High Score to more advanced storage: High score only saved to local storage. If the player revisits the page at another time, or on another browser, this high score will be forgotten. 
+* Game Leader board: Another feature would be to add a leader board where users could insert their name and save their score for their friends to try and beat them. 
+* Different difficulties for the game: The user could pick which difficulty they wanted before starting the game. I could then add different elements to make the game harder. E.g a timer
+
+
 
 ## Technologies Used
 ### Frameworks 
