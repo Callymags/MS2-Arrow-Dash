@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;500&display=swap');
-
+/* LANDING & GAME PAGE */
 html,
 body
 {
@@ -7,52 +7,59 @@ body
     padding: 0px;
     overflow-x: hidden;
     font-family: 'Encode Sans SC', sans-serif;
-    color: #171010;
     background-color: #E4EFE7;
+    color: #171010;
 }
+/* Used to push the footer to the bottom of the screen */
+.list-container,
+.game-container {
+    min-height: 95vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    flex: 1;
+}
+/* NAVBAR */
+.bg-blue {
+    background-color: #3cb7ff; 
+    
+ }
 
 .game-brand {
     height: 4rem;
     width: auto;
     background-color: #f8f9fa;
 }
-/* --------------------------------LANDING PAGE */
-.bg-blue {
-   background-color: #3cb7ff; 
-}
-#game-navigation-container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
-}
 
-#game-navigation,
-#game-section {
-    flex: 1;
-}
-
-/* Contribution from W3 Schools to vertically center elements in a container. 
-Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
-.list-container {
-    min-height: 80vh;
-    position: relative;
-}
-
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-/* Contribution from W3 schools ended */
-
-
-#home-footer {
+/* FOOTER */
+footer {
     background-color: #E4EFE7;
 }
 
+.social-link {
+    font-size: 2rem;
+    color: #171010;
+}
+
+.social-link:hover {
+    color: grey;
+}
+
+
+/* Used to push footer to the bottom of screen on iPad Pro */
+@media screen and (min-height: 1366px) {
+    body {
+        height: 1366px;
+    }
+
+    .game-container,
+    .list-container {
+        height: 1220px;
+    }
+} 
+/* --------------------------------LANDING PAGE */
 .list-item {
     font-size: 4.5rem;
     margin-top: 1.5rem;
@@ -67,18 +74,14 @@ Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
     color: #9BA4B4;
 }
 
-@media screen and (max-width: 320px) {
-    .game-buttons {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}    
 /* --------------------------------GAME PAGE */
-.navbar {
-    padding-bottom: 0;
-    padding-top: 0;
+#white-font {
+    color: #f8fafc; 
 }
 
+.navbar-toggler {
+    background-color: #f8f9fa;
+}
 .game-buttons {
     font-size: 4.5rem;
 }
@@ -91,54 +94,25 @@ h1 {
     font-size: 3.5rem;
 }
 
-#game-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Contribution from W3 Schools to vertically center elements in a container. 
-Link - https://www.w3schools.com/howto/howto_css_center-vertical.asp */
-
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-/* Contribution from W3 schools ended */
-
-.start-button,
-.restart-button {
+.start-button {
     background-color: #39b7ff;
     border-color: #39b7ff;
     color: white;
 }
 
-.start-button:hover,
-.restart-button:hover {
+.start-button:hover {
     background-color: #3292ca;
     color: white;
     border-color: #3292ca;
-}
+} 
+
+@media screen and (max-width: 320px) {
+    .game-buttons {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}   
 /* --------------------------------FOOTER */
-
-#game-footer {
-    background-color: #E4EFE7;
-}
-
-.social-link {
-    font-size: 2rem;
-    color: #171010;
-}
-
-.social-link:hover {
-    color: grey;
-}
 
 /* MODALS */
 .btn-color {
