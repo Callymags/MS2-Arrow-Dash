@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;500&display=swap');
+
 html,
 body
 {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: 'Encode Sans SC', sans-serif;
 }
 
 body {
@@ -96,7 +99,7 @@ h1 {
 #game-page {
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 100vh;
     position: relative;
     padding-left: 0;
     padding-right: 0;
