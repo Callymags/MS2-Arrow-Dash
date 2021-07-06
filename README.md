@@ -11,7 +11,7 @@
   * [Wireframes](#wireframes)
 * [Features](#features)
   * [Landing Page Features](#landing-page-features)
-  * [Future Features Left to Implement](#future-features)
+  * [Future Features](#future-features)
 * [Technologies Used](#technologies-used)
   * [Languages](#languages)
   * [Frameworks](#frameworks)
@@ -152,7 +152,7 @@ I was looking to have on the game page.
 
 ### Frameworks 
 * [jQuery:](https://jquery.com/) Used to simplify the JavaScript code and manipulate the DOM to provide the correct functionality.
-* [Bootstrap 5.01:](https://getbootstrap.com/) Used to style the index and game page and help with the website’s responsiveness. 
+* [Bootstrap 5.0:](https://getbootstrap.com/) Used to style the index and game page and help with the website’s responsiveness. 
 * [Google Developer Tools:](https://developer.chrome.com/docs/devtools/) Used to test responsive elements of page and to fix bugs.
 * [Git:](https://git-scm.com/) Useful to control and document page versions through git commits and git pushes.
 * [Github:](https://github.com/) Used to store project code and to deploy the website.
@@ -163,7 +163,7 @@ I was looking to have on the game page.
 * [Canva:]( https://www.canva.com/) Used to create a simple logo for the game. 
 * [Windows Paint 3D:](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) Used to create a transparent PNG of the logo created on Canva.  
 * [Color Hunt:](https://colorhunt.co/) Used to find a suitable background colours for styling.  
-* [Favicon.io:](https://favicon.io/favicon-converter/)Used to convert the arrow dash logo to favicon format.   
+* [Favicon.io:](https://favicon.io/favicon-converter/) Used to convert the arrow dash logo to favicon format.   
 
 ### Libraries
 * [Google fonts:](https://fonts.google.com/) Used to find appropriate fonts for content of both the index and game page.
