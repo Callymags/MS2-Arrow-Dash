@@ -79,6 +79,10 @@ footer {
     color: #f8fafc; 
 }
 
+#white-font:hover {
+    color: #E4EFE7;
+}
+
 .navbar-toggler {
     background-color: #f8f9fa;
 }
@@ -97,12 +101,12 @@ h1 {
 .start-button {
     background-color: #39b7ff;
     border-color: #39b7ff;
-    color: white;
+    color: #f8fafc;
 }
 
 .start-button:hover {
     background-color: #3292ca;
-    color: white;
+    color: #E4EFE7;
     border-color: #3292ca;
 } 
 
@@ -118,11 +122,11 @@ h1 {
 .btn-color {
     background-color: #39b7ff;
     border-color: #39b7ff;
-    color: white;
+    color: #f8fafc;
 }
 
 .btn-color:hover {
     background-color: #3292ca;
-    color: white;
+    color: #E4EFE7;
     border-color: #3292ca;
 }
