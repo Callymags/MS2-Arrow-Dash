@@ -171,15 +171,6 @@ I was looking to have on the game page.
 
 
 ## Bugs Encountered 
-* **Difficulty validating JavaScript functions through console**
-
-While writing the JavaScript code for my nextSequence function, I found it difficult to confirm if my code would work. 
-I could not find an easy way to confirm this code through the console. 
-
-Solution: I copied the JavaScript lines into the browser console and left out the nextSequence function title. 
-This allowed me to have a definition for a variable within my nextSequence function and confirm that the variable was 
-generating random directions.  
-
 * **Creating a function to compare `userPattern` and `gamePattern` variables**
 
 Attempt 1: To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same 
@@ -301,15 +292,30 @@ $(".game-buttons").click(function () {
 
 * **Whitespace below footer**
 
-Problem: When styling the index and game page, I had a problem pushing the footer down to the bottom of the 
-screen. You can see the problem [here.](assets/images/bugs/whitespace-beneath-footer.jpg) 
+Problem: When styling the index and game page, I had a problem pushing the footer down to the bottom of the screen. You can see the problem [here.](assets/images/bugs/whitespace-beneath-footer.jpg) 
 
-Solution: I found the solution to this problem on a Stack Overflow thread. The solution allowed for a responsive 
-footer with no fixed height that was pushed to the end of the screen on all devices except the iPad and iPad Pro. 
-This was done using the flex display feature in CSS. You can view the link to the 
-thread [here.](https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b)
+Solution: I found the solution to this problem through watching a YouTube video. The solution allowed for a responsive footer with no fixed height that was pushed to the end of the screen on all devices. This was done using the flex display feature in CSS. You can view the video [here.](https://www.youtube.com/watch?v=yc2olxLgKLk) 
 
-I have also linked this thread in the contributions section of this ReadMe. 
+You can also view the code snippet below. 
+```
+html {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+```
+
+I have also linked this video in the contributions section of this ReadMe.
+
 
 * **White space to the right of html and body**
 
@@ -329,31 +335,6 @@ body
     overflow-x: hidden;
 }
 ```
-* **Containers in the main section of landing page and game page not vertically aligned**
-
-Problem: The elements in the main section of both pages would stick to the top of the screen just under the navbar. 
-This meant that there was a lot of space above the footer. You can view an image of the problem by clicking the links below. 
-
-1.	[Landing Page.](assets/images/bugs/landing-page-vertical-alignment-problem.jpg)
-2.  [Game Page.](assets/images/bugs/game-page-vertical-alignment-problem.jpg)
-
-Solution: I found a thread on the W3 Schools page that addressed the problem. This thread has been mentioned in the 
-contributions section of this document. You can view the code snippet that fixed the problem on the game page below. 
-I also used the same code for the landing page. 
-```
-.game-container {
-    min-height: 90vh;
-    position: relative;
-}
-
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-```  
 
 * **Game buttons not centrally aligned in screens under 320px**
 
@@ -388,22 +369,20 @@ You can also view an image of the solution [here.](assets/images/solutions/game-
 1. **Stack Overflow**
 
 * The following thread was used to help play audio once a random direction 
-was generated. [View here.]( https://stackoverflow.com/questions/9419263/how-to-play-audio)
+was generated. [View here.](https://stackoverflow.com/questions/9419263/how-to-play-audio)
 
 * The following thread helped me start the game sequence once the user clicked on the screen 
-for the first time. [View here.]( https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery) 
-
-* The following thread allowed me to push the footer down to the bottom of the screen on all devices besides 
-the iPad & iPad Pro. [View here]( https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b) 
+for the first time. [View here.](https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery)
 
 2. **W3 Schools**
 
 * The following thread helped me to vertically align my containers on both the landing page and the 
-game page. [View here.]( https://www.w3schools.com/howto/howto_css_center-vertical.asp) 
+game page. [View here.](https://www.w3schools.com/howto/howto_css_center-vertical.asp) 
 
 3. **YouTube**
 
-* The following thread helped me to store a player’s high score to local storage and display this on the game page. [View here.]( https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s)  
+* The following thread helped me to store a player’s high score to local storage and display this on the game page. [View here.](https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s)  
+* The following video helped me to push the footer to the bottom of the screen on all devices. [View here.](https://www.youtube.com/watch?v=yc2olxLgKLk) 
 
 
 
