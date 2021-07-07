@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;500&display=swap');
+
+
 /* LANDING & GAME PAGE */
-html,
+html {
+    /* Height used to push the footer to the bottom of the screen. Contribution from following 
+    YouTube Link: https://www.youtube.com/watch?v=yc2olxLgKLk */
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 body
 {
-    margin: 0px;
-    padding: 0px;
+    /* Flex and height used to push the footer to the bottom of the screen. Contribution from following 
+    YouTube Link: https://www.youtube.com/watch?v=yc2olxLgKLk */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     font-family: 'Encode Sans SC', sans-serif;
     background-color: #E4EFE7;
     color: #171010;
 }
-/* Used to push the footer to the bottom of the screen */
-.list-container,
-.game-container {
-    min-height: 95vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
-    flex: 1;
-}
+
 /* NAVBAR */
 .bg-blue {
     background-color: #3cb7ff; 
@@ -36,6 +37,7 @@ body
 /* FOOTER */
 footer {
     background-color: #E4EFE7;
+    margin-top: auto;
 }
 
 .social-link {
@@ -47,18 +49,6 @@ footer {
     color: grey;
 }
 
-
-/* Used to push footer to the bottom of screen on iPad Pro */
-@media screen and (min-height: 1366px) {
-    body {
-        height: 1366px;
-    }
-
-    .game-container,
-    .list-container {
-        height: 1220px;
-    }
-} 
 /* --------------------------------LANDING PAGE */
 .list-item {
     font-size: 4.5rem;
