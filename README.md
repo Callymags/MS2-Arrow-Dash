@@ -220,16 +220,22 @@ function answerCheck() {
     let currentDirection = userPattern.length -1;
 
     if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
-        console.log("Wrong");
-        level = 0;
-        userPattern = [];
-        gamePattern = [];
-        return started = false;
+        $("#level-title").html("Game Over");
+        getAudio("wrong").play();
+        $("#score-div p").html("You reached Level " + gamePattern.length);
+
+        saveHighScore();
+
+        $(".start-button").show().html("Restart Game");
+        started = false;
+        return;  
+          
     }
 
     if (userPattern.length === gamePattern.length) {
-        console.log("Correct")
-        nextSequence();
+        setTimeout(function (){
+            nextSequence();
+        }, nextSequenceDelay);   
     }
 }
 ```
@@ -272,22 +278,18 @@ without the `answerCheck` function comparing them to the `gamePattern` array. Yo
 
 ```
 $(".game-buttons").click(function () {
+    let userDirection = $(this).attr("id");
+    $(this).fadeOut(100).fadeIn(100);
+    let clickAudio = getAudio(userDirection)
+
     if (started === true) {
-        var userDirection = $(this).attr("id");
         userPattern.push(userDirection);
-
-        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
         clickAudio.play();
-
         answerCheck();
-
     } else {
-        var userDirection = $(this).attr("id");
-
-        var clickAudio = new Audio("assets/sounds/" + userDirection + ".mp3")
         clickAudio.play();
     }
-}
+});
 ```
 
 * **Whitespace below footer**
