@@ -169,6 +169,50 @@ I was looking to have on the game page.
 * [Google fonts:](https://fonts.google.com/) Used to find appropriate fonts for content of both the index and game page.
 * [Font Awesome:](https://fontawesome.com/icons?d=gallery&p=2) Provided the icons for the game buttons and the social media links in the footer. 
 
+## Testing 
+### User Stories
+#### Regular Player
+Landing Page - As a regular player, I want: 
+1. A visually appealing landing page no matter what device I use.
+* Bootstrap styling makes the landing page responsive and appealing at all screen sizes. 
+2. The ability to easily navigate through the landing page the first time I visit.
+* Conventional structure and limited options ensure that the user will intuitively know how to navigate through the page.
+3. The game rules provided to be clear, organised, and easy to understand.
+* Tested game with users without explaining the rules. Users were able to understand how the game worked through reading the game rules provided.
+4. The ability to contact the developer to give them feedback through email
+* Contact Us modal on landing page allows users to send developer a message. This modal uses emailJS to send the message automatically to my email.
+
+Game page – As a regular player, I want: 
+1. A game that I can play no matter what device I use.
+* Bootstrap styling has allowed the site to be responsive. This allows users to play the game on any device.
+2. A game that is fun and easy to play.
+* Game rules are easy to follow, and the added confusion of the button clicks makes the game fun to play.
+3. A game that keeps track of what score I have while I am playing.
+* The level title at the top of game page increases each time you input the correct sequence. Also, an added feature has allowed the user to see their high score while they are playing the game. 
+
+#### Software Developer
+Landing Page - As a software developer, I want: 
+1. A visually appealing landing page no matter what device I use. 
+* Bootstrap styling makes the landing page responsive and appealing at all screen sizes. 
+2. The ability to easily navigate through the landing page the first time I visit.
+* Conventional structure and limited options ensure that the user will intuitively know how to navigate through the page.
+3. The game rules provided to be clear, organised, and easy to understand.
+* Tested game with users without explaining the rules. Users were able to understand how the game worked through reading the game rules provided.
+4. The ability to contact the developer to give them feedback through email. 
+* Contact Us modal on landing page allows users to send developer a message. This modal uses emailJS to send the message automatically to my email.
+5. The ability to find the game developer on LinkedIn.
+* Social link in footer that will direct developer to my LinkedIn profile. 
+6. A GitHub link on the landing page that allows me to view developer’s repository and code. 
+* Social link in footer that will direct developer to the repository on a separate tab.
+
+Game page – As a software developer, I want: 
+1. A game that I can play no matter what device I use.
+* Bootstrap styling has allowed the site to be responsive. This allows users to play the game on any device.
+2. A game that is fun and easy to play.
+* Game rules are easy to follow, and the added confusion of the button clicks makes the game fun to play.
+3. A game that keeps track of what score I have while I am playing.
+* The level title at the top of game page increases each time you input the correct sequence. Also, an added feature has allowed the user to see their high score while they are playing the game. 
+
 
 ## Bugs Encountered 
 * **Creating a function to compare `userPattern` and `gamePattern` variables**
