@@ -6,11 +6,9 @@ function sendMail(contactForm) {
     })
     .then (
         function(response) {
-            console.log("SUCCESS", response);
             $("#alertModal").modal("show");
         }, 
         function(error) {
-            console.log("FAILED", error);
             $("#alertfailModal").modal("show");
         }
     );

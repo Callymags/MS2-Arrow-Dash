@@ -57,7 +57,6 @@ function saveHighScore() {
     highScores.splice(1);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    console.log(highScores);
 }
 
 function getRandomButton() {
@@ -88,9 +87,6 @@ function nextSequence() {
        direction to confuse the user
     */
     $("#" + getRandomButton()).fadeOut(100).fadeIn(100);
-
-    console.log(gamePattern);
-
 }
 
 function answerCheck() {
