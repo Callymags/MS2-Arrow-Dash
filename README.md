@@ -140,7 +140,7 @@ I was looking to have on the game page.
 * Title bar favicon: The title bar displays the Arrow Dash logo in favicon format instead of the default favicon.
 
 ### Future Features
-* Save High Score to more advanced storage: High score only saved to local storage. If the player revisits the page at another time, or on another browser, this high score will be forgotten. 
+* Save High Score to more advanced storage: High score only saved to local storage. If the player revisits the page on another browser, this high score will be forgotten. 
 * Game Leader board: Another feature would be to add a leader board where users could insert their name and save their score for their friends to try and beat them. 
 * Different difficulties for the game: The user could pick which difficulty they wanted before starting the game. I could then add different elements to make the game harder. E.g a timer
 
