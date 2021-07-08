@@ -1,14 +1,43 @@
-let buttonDirections = ["up", "down", "left", "right", "buzz"]
+let buttonDirections = ["up", "down", "left", "right", "buzz"] 
 let gamePattern = [];
 let userPattern = [];
-let started = false
+let started = false;
 let level = 0;
-let answer = false;
 const nextSequenceDelay = 1000;
-const assetsFolder = "assets/sounds/"
+const assetsFolder = "assets/sounds/";
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-$("#score-div p").html("High Score: " + highScores);
+$(document).ready(function() {
+    $("#score-div p").html("High Score: " + highScores);
+
+    $(".start-button").click(function() {
+        $(this).hide();
+        started = true;
+        $("#score-div p").html("High Score: " + highScores);
+        level = 0;
+        userPattern = [];
+        gamePattern = [];
+        nextSequence();
+    });
+
+    /*
+    Grabs the input from the user and executes the logic associated with the game
+    */
+    $(".game-buttons").click(function() {
+        let userDirection = $(this).attr("id");
+        $(this).fadeOut(100).fadeIn(100);
+        let clickAudio = getAudio(userDirection);
+
+        if (started === true) {
+            // Add the button the user clicked on to the array
+            userPattern.push(userDirection);
+            clickAudio.play();
+            answerCheck();
+        } else {
+            clickAudio.play();
+        }
+    });
+});
 
 /* Code for saving score to local storage was accomplished through watching the following YouTube tutorial. 
 Link: https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s */ 
@@ -21,16 +50,6 @@ function saveHighScore() {
     localStorage.setItem("highScores", JSON.stringify(highScores));
     console.log(highScores);
 }
-
-$(".start-button").click(function () {
-    $(this).hide();
-    started = true;
-    $("#score-div p").html("High Score: " + highScores);
-    level = 0;
-    userPattern = [];
-    gamePattern = [];
-    nextSequence();
-});
 
 function getRandomButton() {
     return buttonDirections[Math.floor(Math.random() * buttonDirections.length)] + "-btn";
@@ -60,26 +79,6 @@ function nextSequence() {
     console.log(gamePattern);
 
 }
-
-/*
-Grabs the input from the user and executes the logic associated with the game
-*/
-$(".game-buttons").click(function () {
-    let userDirection = $(this).attr("id");
-    $(this).fadeOut(100).fadeIn(100);
-    let clickAudio = getAudio(userDirection)
-
-    if (started === true) {
-        // Add the button the user clicked on to the array
-        userPattern.push(userDirection);
-        clickAudio.play();
-        answerCheck();
-    } else {
-        clickAudio.play();
-    }
-   
-
-});
 
 function answerCheck() {
     let currentDirection = userPattern.length -1;
