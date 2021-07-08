@@ -335,6 +335,69 @@ $(".game-buttons").click(function () {
     }
 });
 ```
+* **Contact Us Form not validating**
+
+Problem: The contact us form would not validate any of the required fields once the “Send Message” button was pressed. You can see the original code snippet below taken from the end of the form. This is where the problem arose.  
+
+```
+<div class="text-end">
+<button type="button" class="btn modal-btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<button type="submit" class="btn modal-btn btn-secondary btn-color" data-bs-dismiss="modal">Send Message</button>
+</div>
+```
+
+Solution: To validate these forms correctly, I needed to remove the `data-bs-dismiss` option from the button. I then needed to make some adjustments to the `sendEmail.js` document to manually close the Contact Us modal. You can view the original code and compare it with the new code below. 
+
+Original Code: 
+```
+function sendMail(contactForm) {
+    emailjs.send("service_klkawbf","template_savnrya", {
+        "from_name": contactForm.firstname.value, 
+        "from_email": contactForm.emailaddress.value, 
+        "game_message": contactForm.messagesummary.value
+    })
+    .then (
+        function(response) {
+            $("#alertModal").modal("show");
+        }, 
+        function(error) {
+            $("#alertfailModal").modal("show");
+        }
+    );
+
+    return false;
+}
+```
+Updated Code:
+```
+/*
+Sends email using emailjs and uses modals to display the message to the user
+*/
+function sendMail(contactForm) {
+    emailjs.send("service_klkawbf","template_savnrya", {
+        "from_name": contactForm.firstname.value, 
+        "from_email": contactForm.emailaddress.value, 
+        "game_message": contactForm.messagesummary.value
+    })
+    .then (
+        function(response) {
+            $("#alertModal").modal("show");
+            // Resets inputs of form if message is sent successfully
+            contactForm.reset();
+        }, 
+        function(error) {
+            $("#alertfailModal").modal("show");
+        }
+    )
+    // Manually close the contact-us modal
+    $("#contactModal").modal("hide"); 
+    // Stops page from refreshing
+    return false;
+}
+``` 
+
+The code was updated so that the JavaScript would manually close the Contact Us modal and would then show either the message success or the message failure modal afterwards. I also had to add some code that would reset the inputs in the form if the user’s message sent successfully. 
+
 
 * **Whitespace below footer**
 
@@ -398,6 +461,7 @@ Solution: To align these buttons on narrower screens, I added a media query that
 
 ```
 You can also view an image of the solution [here.](assets/images/solutions/game-buttons-alignment-solution.jpg)
+
 
 
 
