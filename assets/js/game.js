@@ -1,5 +1,8 @@
+// Game buttons
 let buttonDirections = ["up", "down", "left", "right", "buzz"] 
+// Empty game pattern array that will increase
 let gamePattern = [];
+// User button clicks array that will be compared to game pattern
 let userPattern = [];
 let started = false;
 let level = 0;
@@ -39,10 +42,16 @@ $(document).ready(function() {
     });
 });
 
-/* Code for saving score to local storage was accomplished through watching the following YouTube tutorial. 
-Link: https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s */ 
+/*
+Reference: https: //www.youtube.com/watch?v=DFhmNLKwwGw&t=202s. 
+See ReadMe Contributions for more details.
+*/
 function saveHighScore() {
     let score = gamePattern.length;
+    /*
+    Push score to local storage array, sort the array by the largest number,
+    remove any inputs in array after the first input
+    */
     highScores.push(score);
     highScores.sort(function(a, b){return b-a});
     highScores.splice(1);
@@ -69,11 +78,15 @@ function nextSequence() {
     let randomDirection = getRandomButton();
     gamePattern.push(randomDirection);
 
-    /*    Audio javascript contribution from stackoverflow. See ReadMe Contributions section 
-       for more information (https://stackoverflow.com/questions/9419263/how-to-play-audio) */
-
+    /* 
+       Reference: https://stackoverflow.com/questions/9419263/how-to-play-audio 
+       See ReadMe Contributions section for more details.
+    */
     getAudio(randomDirection).play();
-
+    /* 
+       Generates a random button to be clicked at the same time as the audio 
+       direction to confuse the user
+    */
     $("#" + getRandomButton()).fadeOut(100).fadeIn(100);
 
     console.log(gamePattern);
