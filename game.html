@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/images//styling/favicon.ico">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
         (function () {
             emailjs.init("user_nHBqQzw0fbUTeD9t5lglp");
         })();
@@ -22,27 +22,26 @@
 
 <body>
 
-    <nav id ="white-font" class="navbar navbar-expand-lg navbar-light bg-blue">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img class=" game-brand" src="assets/images//styling/transparent-brand.png" alt="Arrow Dash">
+                <img class="game-brand" src="assets/images//styling/transparent-brand.png" alt="Arrow Dash">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse me-0" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a type="button" id="white-font" class="btn nav-link" href="index.html">Home</a>
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item text-center">
+                        <a class="btn nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a type="button" id="white-font" class="nav-link btn" data-bs-toggle="modal"
-                            data-bs-target="#rulesModal">Rules</a>
+                        <button class="nav-link btn" data-bs-toggle="modal" data-bs-target="#rulesModal">Rules</button>
                     </li>
                     <li class="nav-item">
-                        <a type="button" id="white-font" class="nav-link btn white-font" data-bs-toggle="modal"
-                            data-bs-target="#contactModal">Contact Us</a>
+                        <button class="nav-link btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact
+                            Us</button>
                     </li>
                 </ul>
             </div>
@@ -91,10 +90,10 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <div type="button" class="btn btn-success start-button btn-lg">Start</button>
-                    </div>
+                    <button class="btn btn-success start-button btn-lg">Start</button>
                 </div>
             </div>
+        </div>
     </section>
     <footer id="game-footer" class="footer text-center">
         <div class="row">
@@ -128,20 +127,20 @@
                             Once you hit the start button, listen to the audio directions and click the correct button.
                         </li>
                         <li>
-                            If you click the correct button, the audio directions will call out another 
-                            button. You must then click the first button you pressed and then the next 
+                            If you click the correct button, the audio directions will call out another
+                            button. You must then click the first button you pressed and then the next
                             button given to you by the audio directions.
                         </li>
                         <li>
                             Each time you choose the correct pattern, the sequence will get longer.
                         </li>
                         <li>
-                            When you hear the audio directions, a button will also be clicked at the 
-                            same time. Don’t let this button click distract you! Make sure to focus 
-                            only on the AUDIO directions. 
+                            When you hear the audio directions, a button will also be clicked at the
+                            same time. Don’t let this button click distract you! Make sure to focus
+                            only on the AUDIO directions.
                         </li>
                         <li>
-                            If you press the wrong sequence, you will have the option to restart the game.  
+                            If you press the wrong sequence, you will have the option to restart the game.
                         </li>
                         <li>
                             Enjoy!
@@ -171,18 +170,19 @@
                                 placeholder="Harry" required />
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="emailaddress">Email</label>
                             <input type="email" name="emailaddress" class="form-control form-control-lg"
                                 id="emailaddress" placeholder="harryP@hogwarts.com" required />
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="messagesummary">Message</label>
                             <textarea name="messagesummary" id="messagesummary" class="form-control form-control-lg"
                                 placeholder="Your message here" required></textarea>
                         </div>
                         <hr>
                         <div class="text-end">
-                            <button type="button" class="btn modal-btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn modal-btn btn-secondary"
+                                data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn modal-btn btn-secondary btn-color">Send
                                 Message</button>
                         </div>
@@ -233,7 +233,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/sendEmail.js"></script>
-    <script src="assets/js/game.js" charset="utf-8"></script>
+    <script src="assets/js/game.js"></script>
 </body>
 
 </html>

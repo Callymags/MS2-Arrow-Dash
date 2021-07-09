@@ -51,13 +51,13 @@ footer {
 
 /* --------------------------------LANDING PAGE */
 .list-item {
-    font-size: 4.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .list-link {
     text-decoration: none;
+    font-size: 1.7rem;
 }
 
 .list-link:hover {
@@ -65,16 +65,21 @@ footer {
 }
 
 /* --------------------------------GAME PAGE */
-#white-font {
-    color: #f8fafc; 
+/* Override custom bootstrap navbar-light font color */
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(248 249 250);
 }
 
-#white-font:hover {
-    color: #bcc2bd;
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(188,194,189);
 }
 
 .navbar-toggler {
     background-color: #f8f9fa;
+}
+
+.nav-link {
+    display: inline-block;
 }
 .game-buttons {
     font-size: 4.5rem;
