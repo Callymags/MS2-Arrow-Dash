@@ -298,6 +298,14 @@ The site was perfect on all browsers except for Internet Explorer. I have listed
 * Game Over button pushed down into footer. You can view an image of this problem [here.](assets/images/documentation/ie11-testing.jpg)
 * Rules Modal and Contact Us modal do not appear once clicking on the links. 
 
+### Code Validation 
+1. HTML validated using [W3C Markup Service](https://validator.w3.org/). You can view the results below.
+
+* [Landing Page Results.](assets/images/documentation/index-html-testing.jpg)
+* [Game Page Results.](assets/images/documentation/game-html-testing.jpg)
+
+The validator displays a warning on the landing page given that there is a lack of headings. There are no more errors other than this warning for the landing page code. 
+
 
 
 ## Bugs Encountered 
