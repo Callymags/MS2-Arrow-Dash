@@ -36,17 +36,17 @@ body
 
 /* FOOTER */
 footer {
-    background-color: #E4EFE7;
+    background-color: #3cb7ff;
     margin-top: auto;
 }
 
 .social-link {
     font-size: 2rem;
-    color: #171010;
+    color: #e4efe7;
 }
 
 .social-link:hover {
-    color: grey;
+    color: #bcc2bd;
 }
 
 /* --------------------------------LANDING PAGE */
@@ -70,7 +70,7 @@ footer {
 }
 
 #white-font:hover {
-    color: #E4EFE7;
+    color: #bcc2bd;
 }
 
 .navbar-toggler {
