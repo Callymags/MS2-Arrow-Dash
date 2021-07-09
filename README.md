@@ -266,13 +266,44 @@ Game page – As a software developer, I want:
 * Restart button will appear below game so user can restart game. 
 * Highest score shown just below the game buttons. 
 
+### Responsive Design Testing
+The landing page layout was tested on the following physical devices: 
+* Huawei P20 Lite (Google Chrome)
+* iPad (Safari)
+* Fujitsu Lifebook A512 (Google Chrome)
+* Hp L1906 (Google Chrome)
+
+Google Chrome Developer Tools was also used to test the responsiveness of the site using the following devices. 
+* Moto G4 
+* Galaxy S5
+* Pixel 2 
+* Pixel 2 XL
+* iPhone 5/SE
+* iPhone 6/7/8
+* iPhone 6/7/8 Plus
+* iPhone X
+* iPad
+* iPad Pro
+* Surface Duo
+* Galaxy Fold
+
+### Browser Compatibility
+Browser compatibility was physically tested across the different browsers listed below: 
+* Google Chrome Version 89.0.43389.114
+* Microsoft Edge Version 89.0.774.68
+* Mozilla Firefox Version 87.0
+* Internet Explorer Version 11
+
+The site was perfect on all browsers except for Internet Explorer. I have listed the problems encountered on the Internet Explorer browser below. 
+* Game Over button pushed down into footer. You can view an image of this problem [here.](assets/images/documentation/ie11-testing.jpg)
+* Rules Modal and Contact Us modal do not appear once clicking on the links. 
+
 
 
 ## Bugs Encountered 
 * **Creating a function to compare `userPattern` and `gamePattern` variables**
 
-Attempt 1: To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same 
-as the game pattern. I used the following code to do this comparison: 
+Attempt 1: To produce the next sequence, the game needs to first check that the pattern inputted by the user is the same as the game pattern. I used the following code to do this comparison: 
 
 ```
 function answerCheck() {
