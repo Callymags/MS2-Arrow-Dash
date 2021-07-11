@@ -310,6 +310,11 @@ The validator displays a warning on the landing page given that there is a lack 
 
 * [W3C Markup Service CSS Results.](assets/images/documentation/css-validation.jpg) 
 
+3. JavaScript code validated using [BT Online JavaScript Validator.]( https://beautifytools.com/javascript-validator.php) The validator was not able to recognise the jQuery library and there were errors as a result of this. You can view the results below.
+
+* [JavaScript Validation Results.](assets/images/documentation/js-validation.jpg) 
+
+
 
 
 ## Bugs Encountered 

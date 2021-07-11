@@ -1,5 +1,5 @@
 // Game buttons
-let buttonDirections = ["up", "down", "left", "right", "buzz"] 
+let buttonDirections = ["up", "down", "left", "right", "buzz"];
 // Empty game pattern array that will increase
 let gamePattern = [];
 // User button clicks array that will be compared to game pattern
@@ -10,10 +10,10 @@ const nextSequenceDelay = 1000;
 const assetsFolder = "assets/sounds/";
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-$(document).ready(function() {
+$(document).ready(function () {
     $("#score-div p").html("High Score: " + highScores);
 
-    $(".start-button").click(function() {
+    $(".start-button").click(function () {
         $(this).hide();
         started = true;
         $("#score-div p").html("High Score: " + highScores);
@@ -26,7 +26,7 @@ $(document).ready(function() {
     /*
     Grabs the input from the user and executes the logic associated with the game
     */
-    $(".game-buttons").click(function() {
+    $(".game-buttons").click(function () {
         let userDirection = $(this).attr("id");
         $(this).fadeOut(100).fadeIn(100);
         let clickAudio = getAudio(userDirection);
@@ -53,7 +53,9 @@ function saveHighScore() {
     remove any inputs in array after the first input
     */
     highScores.push(score);
-    highScores.sort(function(a, b){return b-a});
+    highScores.sort(function (a, b) {
+        return b - a;
+    });
     highScores.splice(1);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
@@ -90,7 +92,7 @@ function nextSequence() {
 }
 
 function answerCheck() {
-    let currentDirection = userPattern.length -1;
+    let currentDirection = userPattern.length - 1;
 
     if (userPattern[currentDirection] !== gamePattern[currentDirection]) {
         $("#level-title").html("Game Over");
@@ -103,13 +105,13 @@ function answerCheck() {
         // Restart Button will appear on screen to begin game again
         $(".start-button").show().html("Restart Game");
         started = false;
-        return;  
-          
+        return;
+
     }
     if (userPattern.length === gamePattern.length) {
-        setTimeout(function (){
+        setTimeout(function () {
             nextSequence();
         }, nextSequenceDelay);
-        
+
     }
 }
