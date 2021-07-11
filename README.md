@@ -298,6 +298,14 @@ The site was perfect on all browsers except for Internet Explorer. I have listed
 * Game Over button pushed down into footer. You can view an image of this problem [here.](assets/images/documentation/ie11-testing.jpg)
 * Rules Modal and Contact Us modal do not appear once clicking on the links. 
 
+### Site Performance 
+I tested the site’s performance with the help of [Lighthouse](https://developers.google.com/web/tools/lighthouse) which can be found in Google Developer Tools. Lighthouse enabled me to generate a report on the landing page and the game page which can be viewed by clicking on the links below.
+
+* [Landing Page.](assets/images/documentation/landing-page-performance.jpg)
+* [Game Page](assets/images/documentation/game-page-performance.jpg)
+
+I was happy that all four aspects had a relatively high score.
+
 ### Code Validation 
 1. HTML validated using [W3C Markup Service](https://validator.w3.org/). You can view the results below.
 
