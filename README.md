@@ -306,6 +306,10 @@ The site was perfect on all browsers except for Internet Explorer. I have listed
 
 The validator displays a warning on the landing page given that there is a lack of headings. There are no more errors other than this warning for the landing page code. 
 
+2. CSS code validated using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). No errors were found. You can view the results below.
+
+* [W3C Markup Service CSS Results.](assets/images/documentation/css-validation.jpg) 
+
 
 
 ## Bugs Encountered 
