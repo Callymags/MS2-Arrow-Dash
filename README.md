@@ -31,7 +31,6 @@
   * [Making a Local Clone](#making-a-local-clone)
 * [Contributions](#contributions)
   * [Code](#code)
-  * [Media](#media)
 * [Acknowledgements](#acknowledgements)
 
 ## Project Description
