@@ -548,8 +548,6 @@ view the full code section below.
 html,
 body
 {
-    margin: 0px;
-    padding: 0px;
     overflow-x: hidden;
 }
 ```
