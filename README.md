@@ -11,6 +11,7 @@
   * [Wireframes](#wireframes)
 * [Features](#features)
   * [Landing Page Features](#landing-page-features)
+  * [Game Page Features](#game-page-features)
   * [Future Features](#future-features)
 * [Technologies Used](#technologies-used)
   * [Languages](#languages)
@@ -130,9 +131,9 @@ As you can see from the wireframes, there have been some changes to the landing 
 
 
 ### Game Page Features
-* Navbar: The navbar on the game page displays the game logo, the game Rules modal link and the Contact Us modal link. The navbar background is the same colour as the logo.
+* Navbar: The navbar on the game page displays the game logo, the Home option, the game Rules modal link and the Contact Us modal link. The navbar background is the same colour as the logo.
 * Navbar: The navbar has a responsive toggle hamburger for smaller devices which will keep the navbar from looking cluttered.
-* Background colour: There are three sections of the game page: the navbar, the game-container, and the footer. The game-container and the footer have the same grey colour while the navbar has a light-blue colour. 
+* Background colour: There are three sections of the game page: the navbar, the game-container, and the footer. The navbar and the footer have the same colour while the game section has a grey colour. 
 * Font: The font on the game page is the same as the landing page. 
 * Game container: The user will be able to press the buttons and hear the sounds associated with each button before starting the game. Once the user wants to begin, they can press the start button and the first sequence will begin.  
 * Audio direction vs Button Click direction: After investigating into which element I should use as the correct sequence (Audio/Button Click), I decided to go with the voice sequence as this would mean the user would have to use their audio on their device. Otherwise, the user could just turn the volume down and follow the button clicks which would take away from the game experience. 
