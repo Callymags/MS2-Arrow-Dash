@@ -300,7 +300,7 @@ Browser compatibility was physically tested across the different browsers listed
 * Internet Explorer Version 11
 
 The site was perfect on all browsers except for Internet Explorer. I have listed the problems encountered on the Internet Explorer browser below. 
-* Game Over button pushed down into footer. You can view an image of this problem [here.](assets/images/documentation/ie11-testing.jpg)
+* Start/Restart button pushed down into footer. You can view an image of this problem [here.](assets/images/documentation/ie11-testing.jpg)
 * Rules Modal and Contact Us modal do not appear once clicking on the links. 
 
 ### Site Performance 
