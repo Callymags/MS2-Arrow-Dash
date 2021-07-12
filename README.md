@@ -102,20 +102,24 @@ I used Balsamiq wireframes to visualise how the game would be structured on diff
 
 These wireframes were a useful reference when I began developing the basic structure for the home page and game page. 
 
-They also allowed me to foresee that there may be some problems with the game on smaller screen sizes due to the structure 
-I was looking to have on the game page.  
+They also allowed me to foresee that there may be some problems with the game on smaller screen sizes due to the structure I was looking to have on the game page.  
+
+You can view the three wireframes below. I did not do a wireframe for the rules modal as I knew this would have the same format as the contact-us modal. 
 
 
 * [Landing Page](wireframes/ms2-landing-page.jpg)
 * [Game Page](wireframes/ms2-game-page.jpg)
 * [Contact](wireframes/ms2-contact-us-modal.jpg)
 
+As you can see from the wireframes, there have been some changes to the landing page and the game page. The most noticeable would be the navigation bar on the finished site and also a start button on the game page. 
+
 
 ## Features 
 ### Landing Page Features
+* Landing Page purpose: It is important to note that the user can access all the features from the landing page on the game page. However, I wanted to have a landing page in this project as this is an important design feature for games today. Also, it makes the project look more professional.
 * Navbar: The navbar on the landing page displays the game logo and nothing else. I decided to keep the navbar on the landing page to keep with the same style and layout as the game page.
 * Background colour: The sections of the landing page (navbar, container, and footer) switch between a shade of blue and grey making them more identifiable. 
-* Font: I decided to go with the font Encode Sans SC which puts all letters in capitals. I did this because the game logo is all capitals and there is not a lot of written content on the site.
+* Font: I decided to go with the font Encode Sans SC for the game buttons and navigation items. This font puts all letters in capitals. I then switched the font to Lato for the written content in the modals as there is a lot more to read and I didn’t want all the writing to be in uppercase format.
 * External links: There are two links in the footer which open in a separate tab. These links will lead the user to my GitHub and LinkedIn page.
 * Title bar favicon: The title bar displays the Arrow Dash logo in favicon format instead of the default favicon.
 * Landing Page Options: There are three options on the landing page: Game, Rules, and Contact Us. The user will be led to a different page once clicking on the game option. The other two options are modals and will keep the user on the same page. 
