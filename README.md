@@ -568,16 +568,32 @@ Solution: To align these buttons on narrower screens, I added a media query that
 You can also view an image of the solution [here.](assets/images/solutions/game-buttons-alignment-solution.jpg)
 
 
+## Deployment 
+### GitHub Pages 
+The project was deployed to GitHub Pages using the following steps:
 
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Callymags/MS2-Arrow-Dash) you want to deploy.
+2. At the top of the Repository click the "Settings" link.
+3. Scroll down the Settings page until you have found the section titled "GitHub Pages". It now has its own dedicated tab. Click the link.
+4. Under "Source", click the dropdown called "None", select "Master Branch" and click save.
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site in the "GitHub Pages" section. If there is a green bar with a tick in it then your website has been published successfully. 
 
+### Forking the GitHub Repository 
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account. This allows us to view and/or make changes without
+affecting the original repository by using the following steps:
 
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Callymags/MS2-Arrow-Dash) you want to fork.
+2. At the top of the Repository, located underneath the navbar, click the "Fork" button.
+3. You should now have a copy of the original repository in your account.
 
-
-
-
-
-
-
+### Making a Local Clone 
+1. Log into GitHub and locate the [GitHub Repository](https://github.com/Callymags/MS2-Arrow-Dash) you want to clone.
+2. Click the dropdown labelled "Code" and copy the link shown.
+3. Open Git Bash.
+4. Change to the location where you want the cloned directory to be made.
+5. Type "gitclone" and then paste the URL you copied in step 2.
+6. Press Enter to create your local clone.
 
 ## Contributions 
 ### Code 
@@ -586,18 +602,15 @@ You can also view an image of the solution [here.](assets/images/solutions/game-
 * The following thread was used to help play audio once a random direction 
 was generated. [View here.](https://stackoverflow.com/questions/9419263/how-to-play-audio)
 
-* The following thread helped me start the game sequence once the user clicked on the screen 
-for the first time. [View here.](https://stackoverflow.com/questions/9336700/target-only-the-first-click-in-jquery)
-
-2. **W3 Schools**
-
-* The following thread helped me to vertically align my containers on both the landing page and the 
-game page. [View here.](https://www.w3schools.com/howto/howto_css_center-vertical.asp) 
-
-3. **YouTube**
+2. **YouTube**
 
 * The following thread helped me to store a player’s high score to local storage and display this on the game page. [View here.](https://www.youtube.com/watch?v=DFhmNLKwwGw&t=202s)  
 * The following video helped me to push the footer to the bottom of the screen on all devices. [View here.](https://www.youtube.com/watch?v=yc2olxLgKLk) 
+
+## Acknowledgements
+* My mentor, Reuben Ferrante for the invaluable feedback during the project.
+* Code Institute Slack channel: Provided support when I encountered some problems with code.
+* Friends & Family: Tested the game.
 
 
 
