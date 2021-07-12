@@ -442,7 +442,6 @@ $(".game-buttons").click(function () {
 
     if (started === true) {
         userPattern.push(userDirection);
-        clickAudio.play();
         answerCheck();
     } else {
         clickAudio.play();
