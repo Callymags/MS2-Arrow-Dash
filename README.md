@@ -1,7 +1,7 @@
 # Arrow Dash
-![Mock Up Image]()
+![Mock Up Image](assets/images/documentation/techsini-mockup.jpg)
 * You can view the GitHub repository [here.](https://github.com/Callymags/MS2-Arrow-Dash)
-* You can view the live project [here.](https://callymags.github.io/)
+* You can view the live project [here.](https://callymags.github.io/MS2-Arrow-Dash/)
 
 ## Table of Contents
 * [Project Description](#project-description)
