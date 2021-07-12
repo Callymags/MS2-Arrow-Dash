@@ -18,7 +18,7 @@
   * [Frameworks](#frameworks)
   * [Libraries](#libraries)
 * [Testing](#testing)
-  * [User Stories](#user-stories)
+  * [User Stories](#user-stories-testing)
   * [Feature Functionality](#feature-functionality)
   * [Responsive Design Testing](#responsive-design-testing)
   * [Browser Compatibility](#browser-compatibility)
@@ -175,7 +175,7 @@ As you can see from the wireframes, there have been some changes to the landing 
 * [Font Awesome:](https://fontawesome.com/icons?d=gallery&p=2) Provided the icons for the game buttons and the social media links in the footer. 
 
 ## Testing 
-### User Stories
+### User Stories Testing
 #### Regular Player
 Landing Page - As a regular player, I want: 
 1. A visually appealing landing page no matter what device I use.
