@@ -34,7 +34,6 @@ $(document).ready(function () {
         if (started === true) {
             // Add the button the user clicked on to the array
             userPattern.push(userDirection);
-            clickAudio.play();
             answerCheck();
         } else {
             clickAudio.play();
