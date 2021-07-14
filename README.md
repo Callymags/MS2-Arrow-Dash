@@ -568,11 +568,11 @@ Solution: To align these buttons on narrower screens, I added a media query that
 ```
 You can also view an image of the solution [here.](assets/images/solutions/game-buttons-alignment-solution.jpg)
 
-* **`nextSequence` function audio not working on iPhone Safari browser **
+* **`nextSequence` function audio not working on iPhone Safari browser**
 
 Problem: Once I had published the site, I began testing it on different browsers and found that the audio for the `nextSequence` function was not working once the user got to the second sequence. The reason for this was because of an error I found while investigating the iPhone web browser console. You can view the problem in the console [here.](assets/images/bugs/safari-error.jpg)
 
-The main problem with the audio function was that it plays automatically once the `nextSequence` is fired. iPhone Safari browsers have disabled auto play and need the user to grant page permission before the sound can be played. 
+The main problem with the audio function was that it played automatically once the `nextSequence` is fired. iPhone Safari browsers have disabled auto play and need the user to grant the page permission before the sound can be played. 
 
 Solution: I found a thread in Stack Overflow that helped me to get around this problem. You can view this thread [here.](https://stackoverflow.com/questions/31776548/why-cant-javascript-play-audio-files-on-iphone-safari)
 
