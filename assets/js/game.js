@@ -9,6 +9,7 @@ let level = 0;
 const nextSequenceDelay = 1000;
 const assetsFolder = "assets/sounds/";
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const soundEffect = new Audio();
 
 $(document).ready(function () {
     $("#score-div p").html("High Score: " + highScores);
@@ -20,6 +21,8 @@ $(document).ready(function () {
         level = 0;
         userPattern = [];
         gamePattern = [];
+        // onClick of first interaction on page before I need the sounds
+        soundEffect.play();
         nextSequence();
     });
 
@@ -73,14 +76,17 @@ function nextSequence() {
     userPattern = [];
     level++;
     $("#level-title").html("Level " + (gamePattern.length + 1));
-
     // Generate the random direction that the user must follow
     let randomDirection = getRandomButton();
     /* 
        Reference: https://stackoverflow.com/questions/9419263/how-to-play-audio 
        See ReadMe Contributions section for more details.
     */
-    getAudio(randomDirection).play();
+    // later on when you actually want to play a sound at any point without user interaction
+    soundEffect.src = assetsFolder + randomDirection + '.mp3';
+    soundEffect.play();
+
+    // getAudio(randomDirection).play();
     gamePattern.push(randomDirection);
 
     /* 
@@ -88,6 +94,7 @@ function nextSequence() {
        direction to confuse the user
     */
     $("#" + getRandomButton()).fadeOut(100).fadeIn(100);
+
 }
 
 function answerCheck() {
