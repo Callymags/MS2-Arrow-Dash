@@ -568,6 +568,32 @@ Solution: To align these buttons on narrower screens, I added a media query that
 ```
 You can also view an image of the solution [here.](assets/images/solutions/game-buttons-alignment-solution.jpg)
 
+* **`nextSequence` function audio not working on iPhone Safari browser **
+
+Problem: Once I had published the site, I began testing it on different browsers and found that the audio for the `nextSequence` function was not working once the user got to the second sequence. The reason for this was because of an error I found while investigating the iPhone web browser console. You can view the problem in the console [here.](assets/images/bugs/safari-error.jpg)
+
+The main problem with the audio function was that it plays automatically once the `nextSequence` is fired. iPhone Safari browsers have disabled auto play and need the user to grant page permission before the sound can be played. 
+
+Solution: I found a thread in Stack Overflow that helped me to get around this problem. You can view this thread [here.](https://stackoverflow.com/questions/31776548/why-cant-javascript-play-audio-files-on-iphone-safari)
+
+I have also put the code that I used below. 
+```
+const soundEffect = new Audio();
+
+$(".start-button").click(function () {    
+  soundEffect.play();
+});
+
+function nextSequence() {
+    soundEffect.src = assetsFolder + randomDirection + '.mp3';
+    soundEffect.play();
+}
+```
+The first thing I needed to do was get the user to grant the page permission to play the audio files once they clicked on the Start button. This can be seen in the click function above. 
+
+After that I was able to specify which sound file to be played in the `nextSequence` function. 
+
+
 
 ## Deployment 
 ### GitHub Pages 
@@ -602,6 +628,8 @@ affecting the original repository by using the following steps:
 
 * The following thread was used to help play audio once a random direction 
 was generated. [View here.](https://stackoverflow.com/questions/9419263/how-to-play-audio)
+* The following thread allowed me to play the audio files on the iPhone Safari browser by getting the user’s permission through an initial button click. [View here.](https://stackoverflow.com/questions/31776548/why-cant-javascript-play-audio-files-on-iphone-safari)
+
 
 2. **YouTube**
 
