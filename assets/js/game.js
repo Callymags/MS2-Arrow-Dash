@@ -21,7 +21,7 @@ $(document).ready(function () {
         level = 0;
         userPattern = [];
         gamePattern = [];
-        // onClick of first interaction on page before I need the sounds
+        // Click of button grants permission for audio files to be played on Safari
         soundEffect.play();
         nextSequence();
     });
@@ -82,11 +82,12 @@ function nextSequence() {
        Reference: https://stackoverflow.com/questions/9419263/how-to-play-audio 
        See ReadMe Contributions section for more details.
     */
-    // later on when you actually want to play a sound at any point without user interaction
+
+    // Plays sound on Safari and other browser without any user interaction
     soundEffect.src = assetsFolder + randomDirection + '.mp3';
     soundEffect.play();
-
-    // getAudio(randomDirection).play();
+    
+    // Push direction to gamePattern array
     gamePattern.push(randomDirection);
 
     /* 
