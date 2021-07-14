@@ -76,13 +76,13 @@ function nextSequence() {
 
     // Generate the random direction that the user must follow
     let randomDirection = getRandomButton();
-    gamePattern.push(randomDirection);
-
     /* 
        Reference: https://stackoverflow.com/questions/9419263/how-to-play-audio 
        See ReadMe Contributions section for more details.
     */
     getAudio(randomDirection).play();
+    gamePattern.push(randomDirection);
+
     /* 
        Generates a random button to be clicked at the same time as the audio 
        direction to confuse the user
